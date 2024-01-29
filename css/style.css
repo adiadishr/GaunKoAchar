@@ -261,6 +261,11 @@
   .navbar-nav {
     background: #ffffff;
   }
+
+  .navbar-nav, #navbarCollapse .d-flex {
+    top: -25px;
+    position: relative;
+  }
 }
 
 @media (max-width: 580px) {
