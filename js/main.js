@@ -22,9 +22,11 @@
             }
         } else {
             if ($(this).scrollTop() > 55) {
-                $('.fixed-top').addClass('shadow').css('top', -55);
+                $('.fixed-top').addClass('shadow').css('top', -55),
+                $('.fixed-top').addClass('whitenav').css('background','#ffffff');
             } else {
-                $('.fixed-top').removeClass('shadow').css('top', 0);
+                $('.fixed-top').removeClass('shadow').css('top', 0),
+                $('.fixed-top').removeClass('whitenav').css('background','transparent');
             }
         } 
     });
@@ -39,7 +41,7 @@
     }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: 0}, 0, 'easeInOutExpo');
         return false;
     });
 
