@@ -254,12 +254,18 @@
 
   .hero-header,
   .page-header {
-    padding: 152px !important;
+    padding-top: 152px !important;
   }
 
   .navbar .d-flex,
   .navbar-nav {
     background: #ffffff;
+  }
+}
+
+@media (max-width: 580px) {
+  .navbar-toggler {
+    margin-right: 25px;
   }
 }
 
