@@ -8404,7 +8404,7 @@ fieldset:disabled .btn {
 }
 
 .bg-secondary {
-    background-color: #ffb524 !important
+    background-color: var(--bs-secondary) !important
 }
 
 .bg-success {
