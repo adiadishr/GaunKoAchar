@@ -262,7 +262,8 @@
     background: #ffffff;
   }
 
-  .navbar-nav, #navbarCollapse .d-flex {
+  .navbar-nav,
+  #navbarCollapse .d-flex {
     top: -25px;
     position: relative;
   }
@@ -541,3 +542,13 @@
 }
 
 /*** Footer End ***/
+
+/* Login Page Start*/
+
+.login-right {
+  background: url(/attempt.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Login Page End */
