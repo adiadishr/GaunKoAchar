@@ -563,7 +563,7 @@
 /* Login Page Start*/
 
 .login-right {
-  background: url(/attempt.jpg);
+  background: url(../attempt.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

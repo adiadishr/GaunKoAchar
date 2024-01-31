@@ -22,6 +22,8 @@
             echo "Invalid Credentials";
         }
     }
+
+
  ?>
 
 <!DOCTYPE html>
@@ -30,7 +32,7 @@
 <head>
     <meta charset="utf-8">
     <title>Gaun Ko Achar</title>
-    <link rel="shortcut icon" href="/img/gaunkoachar.png" type="image/x-icon">
+    <link rel="icon" href="../img/gaunkoachar.png" type="image/x-icon">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -76,32 +78,29 @@
                                 <div class="card-body p-md-5 mx-md-4">
 
                                     <div class="text-center">
-                                        <a href="index.html"><img src="/img/gaunkoachar.png" style="width: 185px;" alt="logo"></a>
-                                        <h4 class="mt-1 mb-5 pb-1">Login or Register</h4>
+                                        <a href="index.html"><img src="./img/gaunkoachar.png" style="width: 150px;" alt="logo"></a>
+                                        <h4 class="mt-1 mb-5 pb-1">Login</h4>
                                     </div>
 
-                                    <form>
+                                    <form action= "login.php" method="POST">
                                         <p class="mb-5">Please login to your account</p>
 
                                         <div class="form-outline mb-4">
-                                            <label class="form-label ps-1" for="form2Example11">Email</label>
-                                            <input type="email" id="form2Example11" class="form-control mb-2"
+                                            <label for="email">Email</label>
+                                            <input type="email"  name = "email"  id="email" class="form-control mb-2"
                                                 placeholder="Enter your email please" />
                                         </div>
-
+                                    
                                         <div class="form-outline mb-4">
-                                            <label class="form-label ps-1" for="form2Example22">Password</label>
-                                            <input type="password" id="form2Example22" class="form-control mb-2"
+                                            <label for="password">Password</label>
+                                            <input type="password"  name = "password" id="password" class="form-control mb-2"
                                                 placeholder="Enter your password please" />
                                         </div>
 
                                         <div class="text-center pt-1 mb-1 pb-1">
-                                            <button class="btn btn-primary btn-block fa-lg me-3 mb-3 w-100 " type="button">Login</button>
+                                            <button class="btn btn-primary btn-block fa-lg me-3 mb-3 w-100 " type="login" name = "login" >Login</button>
                                         </div>
 
-                                        <div class="text-center mb-5">
-                                            <a class="link" href="#!">Forgot password?</a>
-                                        </div>
 
                                         <div class="d-flex align-items-center justify-content-center pb-4">
                                             <p class="mb-0 me-2">Don't have an account?</p>
