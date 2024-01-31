@@ -24,9 +24,6 @@
     }
  ?>
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -99,8 +96,7 @@
                                         </div>
 
                                         <div class="text-center pt-1 mb-1 pb-1">
-                                            <button class="btn btn-primary btn-block fa-lg me-3 mb-3 w-100 "
-                                                type="button">Login</button>
+                                            <button class="btn btn-primary btn-block fa-lg me-3 mb-3 w-100 " type="button">Login</button>
                                         </div>
 
                                         <div class="text-center mb-5">
