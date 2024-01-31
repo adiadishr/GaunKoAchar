@@ -314,7 +314,11 @@
 /*** service End ***/
 
 
-/*** Fruits Start ***/
+/*** Shop Start ***/
+#btn-search:hover {
+  background-color: hsl(210, 10%, 83%);
+}
+
 .fruite .tab-class .nav-item a.active {
   background: var(--bs-secondary) !important;
 }
@@ -335,26 +339,26 @@
   color: var(--bs-secondary);
 }
 
-.fruite .fruite-item {
+.fruite .item {
   height: 100%;
   transition: 0.5s;
 }
 
-.fruite .fruite-item:hover {
+.fruite .item:hover {
   box-shadow: 0 0 55px rgba(0, 0, 0, 0.4);
 }
 
-.fruite .fruite-item .fruite-img {
+.fruite .item .fruite-img {
   overflow: hidden;
   transition: 0.5s;
   border-radius: 10px 10px 0 0;
 }
 
-.fruite .fruite-item .fruite-img img {
+.fruite .item .fruite-img img {
   transition: 0.5s;
 }
 
-.fruite .fruite-item .fruite-img img:hover {
+.fruite .item .fruite-img img:hover {
   transform: scale(1.3);
 }
 
