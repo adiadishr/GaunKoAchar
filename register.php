@@ -167,7 +167,7 @@
                                 <div class="card-body p-md-5 mx-md-4">
 
                                     <div class="text-center">
-                                        <a href="index.html"><img src="/img/gaunkoachar.png" style="width: 185px;" alt="logo"></a>
+                                        <a href="index.html"><img src="./img/gaunkoachar.png" style="width: 150px;" alt="logo"></a>
                                         <h4 class="mt-1 mb-5 pb-1">Register</h4>
                                     </div>
                                     
