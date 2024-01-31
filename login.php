@@ -16,7 +16,7 @@
             $_SESSION['loggedin'] = TRUE;
             $_SESSION['email'] = $email;
 
-            header("Location: index.php");
+            header("Location: index.html");
         }
         else{
             echo "Invalid Credentials";
