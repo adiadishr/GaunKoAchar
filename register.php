@@ -4,14 +4,16 @@
     <?php
     $fname_err = $lname_err = $username_err = $email_err = $address_err = $email_err1 = $phone_err = $phone_err1 = $pass_err = $pass_err1 =$success = null;
     if(isset($_POST['submit'])){
+        $username = $_POST['username'];
         $fname = $_POST['first_name'];
         $lname = $_POST['last_name'];
         $email = $_POST['email'];
-        $phone = $_POST['phone'];
+
         $address = $_POST['address'];
-        $pass = $_POST['pass'];
+        $phone = $_POST['phone'];
+        $pass = $_POST['password'];
         $cpass = $_POST['cpass'];
-        $username = $_POST['username'];
+
 
         $existsSql = "SELECT * FROM user WHERE email = '$email'";
         $result = mysqli_query($conn, $existsSql);
@@ -50,7 +52,7 @@
             $pass_err1 = "Passwords do not match"; 
         }
         else{
-            $sql = "INSERT INTO `user` (`username`,`fname`, `lname`, `email`,`address`, `phone`, `password`) VALUES ('$username','$fname', '$lname', '$email','$address', '$phone', '$pass')";
+            $sql = "INSERT INTO `user` (`username`,`first_name`, `last_name`, `email`,`address`, `phone`, `password`) VALUES ('$username','$fname', '$lname', '$email','$address', '$phone', '$pass')";
             $result = mysqli_query($conn, $sql);
             if($result){
                 $success = "Signed Up successfully";
@@ -156,73 +158,82 @@
 <body>
 
     <section class="h-100 gradient-form" style="background-color: #eee;">
-        <div class="container py-5 h-100">
-            <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col-xl-10">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-xl-10">
                     <div class="card rounded-3 text-black">
                         <div class="row g-0">
                             <div class="col-lg-6">
                                 <div class="card-body p-md-5 mx-md-4">
 
                                     <div class="text-center">
-                                        <a href="index.html"><img src="/img/gaunkoachar.png" style="width: 185px;"
-                                                alt="logo"></a>
+                                        <a href="index.html"><img src="/img/gaunkoachar.png" style="width: 185px;" alt="logo"></a>
                                         <h4 class="mt-1 mb-5 pb-1">Register</h4>
                                     </div>
-
-                                    <form>
+                                    
+                                    <form action="register.php" method="POST">
                                         <p class="mb-5">Sign Up for a New Account</p>
-
+                                        <div class="success">
+                                        <p class="success"><?php echo $success?></p>
+                                    </div>
+                                    
                                         <div class="form-outline mb-4">
-                                            <label class="form-label ps-1" for="form2Example11">Username</label>
-                                            <input type="text" id="form2Example11" class="form-control mb-2"
-                                                placeholder="Enter a valid username" />
+                                            <label for="username">Username</label>
+                                            <input type="text" name="username" id="username" class="form-control mb-2" placeholder="Enter a valid username" value="<?php if(isset($_POST['username'])) echo $_POST['username'];?>"/>
+                                            <p class="error username-err"><?php echo $lname_err ?></p>
                                         </div>
 
                                         <div>
-                                            <label for="fullName" class="col-form-label ps-1">Full Name:</label>
+                                            <label for="fullName">Full Name:</label>
                                             <div class="row mb-4">
 
                                                 <div class="col-sm-6">
-                                                    <input type="text" class="form-control" id="firstName"
-                                                        placeholder="First Name">
+                                                    <input type="text" class="form-control" name="first_name" id="fNAme"
+                                                        placeholder="First Name" value="<?php if(isset($_POST['first_name'])) echo $_POST['first_name'];?>">
+                                                        <p class="error fname-err"><?php echo $fname_err ?></p>
                                                 </div>
+                                                
                                                 <div class="col-sm-6">
-                                                    <input type="text" class="form-control" id="lastName"
-                                                        placeholder="Last Name">
+                                                    <input type="text" class="form-control" name="last_name" id="lNAme" placeholder="Last Name"value="<?php if(isset($_POST['last_name'])) echo $_POST['last_name'];?>">
+                                                    <p class="error lname-err"><?php echo $lname_err ?></p>
                                                 </div>
                                             </div>
                                         </div>
-
+                                      
                                         <div class="form-outline mb-4">
-                                            <label class="form-label ps-1" for="form2Example11">Email</label>
-                                            <input type="email" id="form2Example11" class="form-control mb-2"
-                                                placeholder="Enter a valid e-mail" />
+                                            <label for="email">Email</label>
+                                            <input type="email" name="email" id="exampleInputEmail1"  aria-describedby="emailHelp" class="form-control mb-2"
+                                                placeholder="Enter a valid e-mail" value="<?php if(isset($_POST['email'])) echo $_POST['email'];?>" />
+                                                <p class="error email-err"><?php echo $email_err ?></p>
+                                                <p class="error email-err"><?php echo $email_err1 ?></p>
+                                            </div>
+                                  
+                                        <div class="form-outline mb-4">
+                                            <label for="address">Address</label>
+                                            <input type="text" name="address" id="address" class="form-control mb-2" placeholder="Enter a valid address" value="<?php if(isset($_POST['address'])) echo $_POST['address'];?>"/>
+                                            <p class="error address-err"><?php echo $address_err ?></p>
                                         </div>
 
                                         <div class="form-outline mb-4">
-                                            <label class="form-label ps-1" for="form2Example11">Address</label>
-                                            <input type="text" id="form2Example11" class="form-control mb-2"
-                                                placeholder="Enter a valid address" />
-                                        </div>
-
+                                            <label for="phone">Phone Number</label>
+                                            <input type="number" name="phone" id="phonenumber" class="form-control mb-2"
+                                                placeholder="Enter a valid phone number" value="<?php if(isset($_POST['phone'])) echo $_POST['phone'];?>" />
+                                                <p class="error phone-err"><?php echo $phone_err ?></p>
+                                                <p class="error phone-err"><?php echo $phone_err1 ?></p>
+                                            </div>
+            
                                         <div class="form-outline mb-4">
-                                            <label class="form-label ps-1" for="form2Example11">Phone Number</label>
-                                            <input type="number" id="form2Example11" class="form-control mb-2"
-                                                placeholder="Enter a valid phone number" />
-                                        </div>
-
-                                        <div class="form-outline mb-4">
-                                            <label class="form-label ps-1" for="form2Example22">Password</label>
-                                            <input type="password" id="form2Example22" class="form-control mb-2"
-                                                placeholder="Enter a secure password" />
-                                            <input type="password" id="form2Example22" class="form-control mb-2"
+                                            <label for="password">Password</label>
+                                            <input type="password" name="password" id="Password1" class="form-control mb-2"
+                                                placeholder="Enter a secure password" value="<?php if(isset($_POST['password'])) echo $_POST['password'];?>"/>
+                                                <p class="error pass-err"><?php echo $pass_err ?></p>
+                                                <input type="password" name="cpass" id="retypePassword1" class="form-control mb-2"
                                                 placeholder="Repeat Password" />
+                                                <p class="error pass-err"><?php echo $pass_err1 ?></p>
                                         </div>
-
+                   
                                         <div class="text-center pt-1 mb-1 pb-1">
-                                            <button class="btn btn-secondary  btn-block fa-lg me-3 mb-3 w-100 "
-                                                type="button">Register</button>
+                                        <input type="submit" name="submit" value="Sign Up"class="btn btn-secondary  btn-block fa-lg me-3 mb-3 w-100">
                                         </div>
 
                                     </form>
