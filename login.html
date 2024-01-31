@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,8 +35,13 @@
 </head>
 
 <body>
+<?php
+        if ($login) {
+            echo "Logged in Successfully";
+        }
+     ?>
 
-    <section class="h-100 gradient-form" style="background-color: #eee;">
+    <section class="h-100 gradient-form bg-gray" style="background-color: #eee;">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-xl-10">
@@ -45,64 +51,38 @@
                                 <div class="card-body p-md-5 mx-md-4">
 
                                     <div class="text-center">
-                                        <a href="index.html"><img src="/img/gaunkoachar.png" style="width: 185px;"
-                                                alt="logo"></a>
-                                        <h4 class="mt-1 mb-5 pb-1">Register</h4>
+                                        <a href="index.html"><img src="/img/gaunkoachar.png" style="width: 185px;" alt="logo"></a>
+                                        <h4 class="mt-1 mb-5 pb-1">Login or Register</h4>
                                     </div>
 
                                     <form>
-                                        <p class="mb-5">Sign Up for a New Account</p>
-
-                                        <div class="form-outline mb-4">
-                                            <label class="form-label ps-1" for="form2Example11">Username</label>
-                                            <input type="text" id="form2Example11" class="form-control mb-2"
-                                                placeholder="Enter a valid username" />
-                                        </div>
-
-                                        <div>
-                                            <label for="fullName" class="col-form-label ps-1">Full Name:</label>
-                                            <div class="row mb-4">
-
-                                                <div class="col-sm-6">
-                                                    <input type="text" class="form-control" id="firstName"
-                                                        placeholder="First Name">
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <input type="text" class="form-control" id="lastName"
-                                                        placeholder="Last Name">
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <p class="mb-5">Please login to your account</p>
 
                                         <div class="form-outline mb-4">
                                             <label class="form-label ps-1" for="form2Example11">Email</label>
                                             <input type="email" id="form2Example11" class="form-control mb-2"
-                                                placeholder="Enter a valid e-mail" />
-                                        </div>
-
-                                        <div class="form-outline mb-4">
-                                            <label class="form-label ps-1" for="form2Example11">Address</label>
-                                            <input type="text" id="form2Example11" class="form-control mb-2"
-                                                placeholder="Enter a valid address" />
-                                        </div>
-
-                                        <div class="form-outline mb-4">
-                                            <label class="form-label ps-1" for="form2Example11">Phone Number</label>
-                                            <input type="number" id="form2Example11" class="form-control mb-2"
-                                                placeholder="Enter a valid phone number" />
+                                                placeholder="Enter your email please" />
                                         </div>
 
                                         <div class="form-outline mb-4">
                                             <label class="form-label ps-1" for="form2Example22">Password</label>
                                             <input type="password" id="form2Example22" class="form-control mb-2"
-                                                placeholder="Enter a secure password" />
-                                            <input type="password" id="form2Example22" class="form-control mb-2"
-                                                placeholder="Repeat Password" />
+                                                placeholder="Enter your password please" />
                                         </div>
 
                                         <div class="text-center pt-1 mb-1 pb-1">
-                                            <button class="btn btn-secondary  btn-block fa-lg me-3 mb-3 w-100 "
-                                                type="button">Register</button>
+                                            <button class="btn btn-primary btn-block fa-lg me-3 mb-3 w-100 "
+                                                type="button">Login</button>
+                                        </div>
+
+                                        <div class="text-center mb-5">
+                                            <a class="link" href="#!">Forgot password?</a>
+                                        </div>
+
+                                        <div class="d-flex align-items-center justify-content-center pb-4">
+                                            <p class="mb-0 me-2">Don't have an account?</p>
+                                            <a href="register.html"><button type="button"
+                                                    class="btn btn-outline-secondary ">Create new</button></a>
                                         </div>
 
                                     </form>
@@ -133,8 +113,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <span class="text-light"><a href="index.html"><i class="fas fa-copyright text-light me-2"></i>Gaun
-                            Ko
+                    <span class="text-light"><a href="index.html"><i class="fas fa-copyright text-light me-2"></i>Gaun Ko
                             Achar</a>, All right reserved.</span>
                 </div>
                 <div class="col-md-6 my-auto text-center text-md-end text-white">
