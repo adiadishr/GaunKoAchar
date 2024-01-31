@@ -12,10 +12,6 @@
         $pass = $_POST['pass'];
         $cpass = $_POST['cpass'];
         $username = $_POST['username'];
-<<<<<<< HEAD
-=======
-
->>>>>>> f4dd6fce778d9b62310ed98744b9863f758ea43c
         $existsSql = "SELECT * FROM user WHERE email = '$email'";
         $result = mysqli_query($conn, $existsSql);
         $numExistRows = mysqli_num_rows($result);
@@ -50,11 +46,7 @@
             $pass_err = "Atleast 8 characters needed";
         }
         else if($pass !== $cpass){
-<<<<<<< HEAD
             $pass_err1 = "Passwords do not match";
-=======
-            $pass_err1 = "Passwords do not match"; 
->>>>>>> f4dd6fce778d9b62310ed98744b9863f758ea43c
         }
         else{
             $sql = "INSERT INTO `user` (`username`,`fname`, `lname`, `email`,`address`, `phone`, `password`) VALUES ('$username','$fname', '$lname', '$email','$address', '$phone', '$pass')";
@@ -65,13 +57,7 @@
             }
         }
     }
-<<<<<<< HEAD
     ?>
-=======
-
-    ?>
-
->>>>>>> f4dd6fce778d9b62310ed98744b9863f758ea43c
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -97,111 +83,61 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-<<<<<<< HEAD
     <?php
-=======
-
-    <?php 
->>>>>>> f4dd6fce778d9b62310ed98744b9863f758ea43c
     if($fname_err!=null){
         ?><style>.fname-err{display: block;}</style><?php
     }
     ?>
-<<<<<<< HEAD
     <?php
-=======
-
-    <?php 
->>>>>>> f4dd6fce778d9b62310ed98744b9863f758ea43c
     if($lname_err!=null){
         ?><style>.lname-err{display: block;}</style><?php
     }
     ?>
-<<<<<<< HEAD
     <?php
-=======
-    <?php 
->>>>>>> f4dd6fce778d9b62310ed98744b9863f758ea43c
     if($email_err!=null){
         ?><style>.email-err{display: block;}</style><?php
     }
     ?>
-<<<<<<< HEAD
     <?php
-=======
-    <?php 
->>>>>>> f4dd6fce778d9b62310ed98744b9863f758ea43c
     if($username_err!=null){
         ?><style>.username-err{display: block;}</style><?php
     }
     ?>
-<<<<<<< HEAD
     <?php
-=======
-    <?php 
->>>>>>> f4dd6fce778d9b62310ed98744b9863f758ea43c
     if($address_err!=null){
         ?><style>.address-err{display: block;}</style><?php
     }
     ?>
-<<<<<<< HEAD
     <?php
-=======
-    <?php 
->>>>>>> f4dd6fce778d9b62310ed98744b9863f758ea43c
     if($email_err1!=null){
         ?><style>.email-err{display: block;}</style><?php
     }
     ?>
-<<<<<<< HEAD
     <?php
-=======
-    <?php 
->>>>>>> f4dd6fce778d9b62310ed98744b9863f758ea43c
     if($phone_err!=null){
         ?><style>.phone-err{display: block;}</style><?php
     }
     ?>
-<<<<<<< HEAD
     <?php
-=======
-    <?php 
->>>>>>> f4dd6fce778d9b62310ed98744b9863f758ea43c
     if($phone_err1!=null){
         ?><style>.phone-err{display: block;}</style><?php
     }
     ?>
-<<<<<<< HEAD
     <?php
-=======
-    <?php 
->>>>>>> f4dd6fce778d9b62310ed98744b9863f758ea43c
     if($pass_err!=null){
         ?><style>.pass-err{display: block;}</style><?php
     }
     ?>
-<<<<<<< HEAD
     <?php
-=======
-    <?php 
->>>>>>> f4dd6fce778d9b62310ed98744b9863f758ea43c
     if($pass_err1!=null){
         ?><style>.pass-err{display: block;}</style><?php
     }
     ?>
-<<<<<<< HEAD
     <?php
-=======
-    <?php 
->>>>>>> f4dd6fce778d9b62310ed98744b9863f758ea43c
     if($success!=null){
         ?><style>.success{display: block;}</style><?php
     }
     ?>
-<<<<<<< HEAD
-=======
-
->>>>>>> f4dd6fce778d9b62310ed98744b9863f758ea43c
 </head>
 <body>
     <section class="h-100 gradient-form" style="background-color: #eee;">
