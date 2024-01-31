@@ -32,7 +32,7 @@
 <head>
     <meta charset="utf-8">
     <title>Gaun Ko Achar</title>
-    <link rel="icon" href="../img/gaunkoachar.png" type="image/x-icon">
+    <link rel="icon" href="./img/gaunkoachar.png" type="image/x-icon">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -104,7 +104,7 @@
 
                                         <div class="d-flex align-items-center justify-content-center pb-4">
                                             <p class="mb-0 me-2">Don't have an account?</p>
-                                            <a href="register.html"><button type="button"
+                                            <a href="register.php"><button type="button"
                                                     class="btn btn-outline-secondary ">Create new</button></a>
                                         </div>
 
