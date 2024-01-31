@@ -1,3 +1,32 @@
+<?php
+    include "dbconnect.php";
+    $login = FALSE;
+
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+        $email = $_POST["email"];
+        $password = $_POST["password"];
+
+        $sql = "SELECT * FROM user WHERE email = '$email' AND password = '$password'";
+        $result = mysqli_query($conn, $sql);
+        $num = mysqli_num_rows($result);
+
+        if ($num == 1 ) {
+            $login = TRUE;
+            session_start();
+            $_SESSION['loggedin'] = TRUE;
+            $_SESSION['email'] = $email;
+
+            header("Location: index.php");
+        }
+        else{
+            echo "Invalid Credentials";
+        }
+    }
+ ?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,6 +63,11 @@
 </head>
 
 <body>
+<?php
+        if ($login) {
+            echo "Logged in Successfully";
+        }
+     ?>
 
     <section class="h-100 gradient-form bg-gray" style="background-color: #eee;">
         <div class="container py-5 h-100">
@@ -53,9 +87,9 @@
                                         <p class="mb-5">Please login to your account</p>
 
                                         <div class="form-outline mb-4">
-                                            <label class="form-label ps-1" for="form2Example11">Username</label>
+                                            <label class="form-label ps-1" for="form2Example11">Email</label>
                                             <input type="email" id="form2Example11" class="form-control mb-2"
-                                                placeholder="Enter your username please" />
+                                                placeholder="Enter your email please" />
                                         </div>
 
                                         <div class="form-outline mb-4">
@@ -66,8 +100,7 @@
 
                                         <div class="text-center pt-1 mb-1 pb-1">
                                             <button class="btn btn-primary btn-block fa-lg me-3 mb-3 w-100 "
-                                                type="button">Log
-                                                in</button>
+                                                type="button">Login</button>
                                         </div>
 
                                         <div class="text-center mb-5">
