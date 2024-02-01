@@ -68,8 +68,8 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 					<div class="navbar-nav mx-auto">
-						<a href="index.html" class="nav-item nav-link active">Home</a>
-						<a href="shop.html" class="nav-item nav-link">Shop</a>
+						<a href="index.php" class="nav-item nav-link active">Home</a>
+						<a href="shop.php" class="nav-item nav-link">Shop</a>
 						<a href="ourstory.html" class="nav-item nav-link">Our Story</a>
 						<!-- <div class="nav-item dropdown">
 							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -81,12 +81,12 @@
 							</div>
 						</div> -->
 						<a href="contact.html" class="nav-item nav-link">Contact</a>
-						<a href="cart.html" class="nav-item nav-link">Checkout</a>
+						<a href="cart.php" class="nav-item nav-link">Checkout</a>
 					</div>
 					<div class="d-flex p-3 me-0">
 						<button class="btn-search btn btn-md-square rounded-circle me-4" data-bs-toggle="modal"
 							data-bs-target="#searchModal"><i class="fas fa-2x fa-search text-primary"></i></button>
-						<a href="cart.html" class="position-relative me-4 my-auto">
+						<a href="cart.php" class="position-relative me-4 my-auto">
 							<i class="fa fa-shopping-bag fa-2x"></i>
 							<span
 								class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1"
