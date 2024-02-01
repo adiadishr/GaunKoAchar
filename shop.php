@@ -70,7 +70,7 @@
         <div class="container px-0 bg-white ">
             <nav class="navbar navbar-light navbar-expand-xl">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="display-6"><img src="/img/gaunkoachar.png" class="main-logo" /></h1>
+                    <h1 class="display-6"><img src="./img/gaunkoachar.png" class="main-logo" /></h1>
                 </a>
                 <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -93,7 +93,7 @@
                                 class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1"
                                 style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
                         </a>
-                        <a href="login.html" class="my-auto">
+                        <a href="login.php" class="my-auto">
                             <i class="fas fa-user fa-2x"></i>
                         </a>
                     </div>
@@ -185,12 +185,12 @@
                                             </div>
                                             <div class="d-flex justify-content-between flex-lg-wrap">
                                             <?php if(isset($_SESSION['email'])){?> 
-                                                <button href="product.html?product_id=<?php echo$prod["product_id"];?>" class="btn border-secondary rounded-circle">
-                                                <i class="fa fa-eye text-primary py-2 px-1"></i></button>  <?php }else{ ?>
-                                                    <button href='login.php' class='btn border-secondary rounded-circle'>
-                                                        <i class="fa fa-eye text-primary py-2 px-1"></i></button> <?php } ?>
-                                                <button href="cart.html" class="btn border border-secondary rounded-pill px-3 text-primary"><i
-                                                        class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</button>
+                                                <a href="shop-detail.php?product_id=<?php echo$prod["product_id"];?>" class="btn border-secondary rounded-circle">
+                                                <i class="fa fa-eye text-primary py-2 px-1"></i></a>  <?php }else{ ?>
+                                                    <a href='login.php' class='btn border-secondary rounded-circle'>
+                                                        <i class="fa fa-eye text-primary py-2 px-1"></i></a> <?php } ?>
+                                                <a href="cart.php" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
 
                                             </div>
                                         </div>

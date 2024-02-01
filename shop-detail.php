@@ -1,18 +1,14 @@
+<?php
+include "dbconnect.php";
+$product_id = $_GET['product_id'];
+$pdetails = mysqli_query($conn, "SELECT * FROM products where product_id = '$product_id'");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <title>Fruitables - Vegetable Website Template</title>
-    <link rel="shortcut icon" href="/img/gaunkoachar.png" type="image/x-icon">
-=======
-    <title>Gaun Ko Achar</title>
->>>>>>> 0db50ad4a8b37aa7693e3867f93fa9b75fd8483e
-=======
     <title> Shop-Detail</title>
->>>>>>> 61608647e858454c136148b5db13a789f18e64d4
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -69,7 +65,7 @@
         <div class="container px-0 bg-white ">
             <nav class="navbar navbar-light navbar-expand-xl">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="display-6"><img src="/img/gaunkoachar.png" class="main-logo" /></h1>
+                    <h1 class="display-6"><img src="./img/gaunkoachar.png" class="main-logo" /></h1>
                 </a>
                 <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -137,7 +133,19 @@
 
 
     <!-- Single Product Start -->
+    <?php
+    // $pdetails = mysqli_query($conn, "SELECT * FROM products where pid = '$pid'");
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+            $product_name = $_POST["product_name"];
+            $product_description = $_POST["product_description"];
+            $product_price = $_POST["product_price"];
+            $product_image = $_POST["product_image"];
+        header("Location:shop.php?product_id=" . $product_id);
+}
+?>
+    !!!!!!!
     <div class="container-fluid py-5 mt-5">
+    <?php while ($product = mysqli_fetch_assoc($pdetails)) { ?>
         <div class="container py-5">
             <div class="row g-4 mb-5">
                 <div class="col">
@@ -145,29 +153,28 @@
                         <div class="col-lg-6">
                             <div class="border rounded">
                                 <a href="#">
-                                    <img src="img/single-item.jpg" class="img-fluid rounded" alt="Image">
+                                    <img src="uploads/<?php echo $prod['product_image'];?>" class="img-fluid rounded" alt="Image">
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <h4 class="fw-bold mb-3">Fenugreek Pickle</h4>
+                            <h4 class="fw-bold mb-3"><?php echo $prod['product_name']?></h4>
                             <h5 class="fw-bold mb-3">Rs. 250</h5>
-                            <p class="mb-4">The generated Lorem Ipsum is therefore always free from repetition injected
-                                humour, or non-characteristic words etc.</p>
-                            <p class="mb-4">Susp endisse ultricies nisi vel quam suscipit. Sabertooth peacock flounder;
-                                chain pickerel hatchetfish, pencilfish snailfish</p>
-                            <a href="#" class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary"><i
+                            <p class="mb-4"><?php echo $prod['product_description']?></p>
+
+                            <a href="cart.html" class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary"><i
                                     class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                         </div>
+                        <?php }?>
+!!!!!
+
                         <div class="col-lg-12">
                             <nav>
                                 <div class="nav nav-tabs mb-3">
                                     <button class="nav-link active border-white border-bottom-0" type="button"
                                         role="tab" id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about"
                                         aria-controls="nav-about" aria-selected="true">Description</button>
-                                    <!-- <button class="nav-link border-white border-bottom-0" type="button" role="tab"
-                                        id="nav-mission-tab" data-bs-toggle="tab" data-bs-target="#nav-mission"
-                                        aria-controls="nav-mission" aria-selected="false">Reviews</button> -->
+                                  
                                 </div>
                             </nav>
                             <div class="tab-content mb-5">
@@ -462,6 +469,7 @@
             </div>
         </div>
     </div>
+    !!!!!!!
     <!-- Single Product End -->
 
 

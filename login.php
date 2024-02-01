@@ -16,7 +16,7 @@
             $_SESSION['loggedin'] = TRUE;
             $_SESSION['email'] = $email;
 
-            header("Location: index.html");
+            header("Location: index.php");
         }
         else{
             echo "Invalid Credentials";
@@ -98,7 +98,7 @@
                                         </div>
 
                                         <div class="text-center pt-1 mb-1 pb-1">
-                                            <button class="btn btn-primary btn-block fa-lg me-3 mb-3 w-100 " type="login" name = "login" >Login</button>
+                                           <button class="btn btn-primary btn-block fa-lg me-3 mb-3 w-100 " type="login" name = "login" >Login</button>
                                         </div>
 
 
