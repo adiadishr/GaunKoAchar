@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('navbar.php');
+
 include('dbconnect.php');
 ?>
 
@@ -10,6 +10,7 @@ include('dbconnect.php');
 <head>
     <meta charset="utf-8">
     <title>Cart</title>
+    <link rel="shortcut icon" href="/img/gaunkoachar.ico" type="image/x-icon">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -42,6 +43,13 @@ include('dbconnect.php');
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <?php
+    include('navbar.php');
+    ?>
+
+    <!-- Navbar End -->
 
 
     <!-- Modal Search Start -->
