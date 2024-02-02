@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 ?>
 <!DOCTYPE html>
@@ -224,7 +224,7 @@ session_start();
         <div class="container">
             <div class="text-center pb-5 mb-5">
                 <h2 class="section-heading text-uppercase">Our Story</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">The origins of Gaun Ko Achar!</h3>
             </div>
             <ul class="timeline">
                 <li>
@@ -235,7 +235,8 @@ session_start();
                             <h4 class="subheading">Our Humble Beginnings</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <p class="text-muted">Srijana's entrepreneurial journey began with resilience in response to life's challenges. After her husband's demise, she embraced the opportunity to support herself and her son by entering the business world, focusing on pickle-making.
+                            </p>
                         </div>
                     </div>
                 </li>
@@ -247,7 +248,8 @@ session_start();
                             <h4 class="subheading">An Agency is Born</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <p class="text-muted">Starting small with just a few varieties, Srijana's passion gradually transformed her venture into a thriving enterprise. With dedication to quality, she expanded her product line to offer more than 10 diverse pickle varieties, each jar reflecting her hard work and love for her craft.
+                            </p>
                         </div>
                     </div>
                 </li>
@@ -259,7 +261,8 @@ session_start();
                             <h4 class="subheading">Transition to Full Service</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <p class="text-muted">The community's response to Srijana's pickles was phenomenal, with word of mouth attracting customers from far and wide. The overwhelming support not only boosted her confidence but also validated the significance of her venture. Having sold over 500 pickle jars, Srijana achieved financial independence and became a symbol of resilience and success in her community.
+                            </p>
                         </div>
                     </div>
                 </li>
@@ -271,7 +274,9 @@ session_start();
                             <h4 class="subheading">Phase Two Expansion</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <p class="text-muted">Today, Srijana stands proud of the thriving business she built from the ground up. Her journey from a grieving widow to a successful entrepreneur is an inspiring narrative that highlights the strength of the human spirit. Srijana's story exemplifies how determination, passion, and homemade goodness can transform adversity into a recipe for triumph.
+
+                            </p>
                         </div>
                     </div>
                 </li>
@@ -290,6 +295,36 @@ session_start();
         </div>
     </section>
     <!-- Our Story End -->
+
+    <!-- Banner Section Start-->
+	<div class="container-fluid banner bg-secondary mt-5">
+		<div class="container py-5">
+			<div class="row g-4 align-items-center">
+				<div class="col-lg-6">
+					<div class="py-4">
+						<h1 class="display-3 text-white">Fresh Exotic Fruits</h1>
+						<p class="fw-normal display-3 text-dark mb-4">in Our Store</p>
+						<p class="mb-4 text-dark">The generated Lorem Ipsum is therefore always free from repetition
+							injected humour, or non-characteristic words etc.</p>
+						<a href="#" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">BUY</a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="position-relative">
+						<img src="img/baner-1.png" class="img-fluid w-100 rounded" alt="">
+						<div class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute" style="width: 140px; height: 140px; top: 0; left: 0;">
+							<h1 style="font-size: 100px;">1</h1>
+							<div class="d-flex flex-column">
+								<span class="h2 mb-0">50$</span>
+								<span class="h4 text-muted mb-0">kg</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Banner Section End -->
 
 
     <!-- Footer Start -->
