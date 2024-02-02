@@ -144,11 +144,11 @@ session_start();
 					<h1 class="mb-5 display-3 text-primary">Organic Veggies & Fruits Foods</h1>
 					<div class="position-relative mx-auto">
 						<button type="submit" class="btn btn-primary border-2 border-secondary position-absolute rounded-pill text-white py-2 px-5">Shop Now</button>
-						<?php if(isset($_SESSION['email'])){
+						<?php if (isset($_SESSION['email'])) {
 							echo '<a href="./shop.php" class="btn btn-primary border-2 border-secondary position-absolute rounded-pill text-white py-2 px-5">Shop Now</a>';
-						}else{
+						} else {
 							echo '<a href="./login.php" class="btn btn-primary border-2 border-secondary position-absolute rounded-pill text-white py-2 px-5">Shop Now</a>';
-							}?>
+						} ?>
 					</div>
 				</div>
 				<div class="col-md-12 col-lg-5">
@@ -475,6 +475,77 @@ session_start();
 		</div>
 	</div>
 	<!-- Tastimonial End -->
+
+	<!-- FAQ Section Start -->
+
+	<div class="container-xl mx-auto mb-5">
+	<h1 class="display-5 mb-3 text-primary text-center">FAQ</h1>
+		<p class="text-center mb-5">
+			Find the answers for the most frequently asked questions below
+		</p>
+
+		<div class="row px-5">
+			<div class="col-md-6 col-lg-4 mb-4">
+				<h6 class="mb-3 text-primary"><i class="far fa-paper-plane text-primary pe-2"></i> A simple
+					question?</h6>
+				<p>
+					<strong><u>Absolutely!</u></strong> We work with top payment companies which guarantees
+					your
+					safety and
+					security. All billing information is stored on our payment processing partner.
+				</p>
+			</div>
+
+			<div class="col-md-6 col-lg-4 mb-4">
+				<h6 class="mb-3 text-primary"><i class="fas fa-pen-alt text-primary pe-2"></i> A question
+					that
+					is longer then the previous one?</h6>
+				<p>
+					<strong><u>Yes, it is possible!</u></strong> You can cancel your subscription anytime in
+					your
+					account. Once the subscription is
+					cancelled, you will not be charged next month.
+				</p>
+			</div>
+
+			<div class="col-md-6 col-lg-4 mb-4">
+				<h6 class="mb-3 text-primary"><i class="fas fa-user text-primary pe-2"></i> A simple
+					question?
+				</h6>
+				<p>
+					Currently, we only offer monthly subscription. You can upgrade or cancel your monthly
+					account at any time with no further obligation.
+				</p>
+			</div>
+
+			<div class="col-md-6 col-lg-4 mb-4">
+				<h6 class="mb-3 text-primary"><i class="fas fa-rocket text-primary pe-2"></i> A simple
+					question?
+				</h6>
+				<p>
+					Yes. Go to the billing section of your dashboard and update your payment information.
+				</p>
+			</div>
+
+			<div class="col-md-6 col-lg-4 mb-4">
+				<h6 class="mb-3 text-primary"><i class="fas fa-home text-primary pe-2"></i> A simple
+					question?
+				</h6>
+				<p><strong><u>Unfortunately no</u>.</strong> We do not issue full or partial refunds for any
+					reason.</p>
+			</div>
+
+			<div class="col-md-6 col-lg-4 mb-4">
+				<h6 class="mb-3 text-primary"><i class="fas fa-book-open text-primary pe-2"></i> Another
+					question that is longer than usual</h6>
+				<p>
+					Of course! We’re happy to offer a free plan to anyone who wants to try our service.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- FAQ Section End -->
 
 	<?php
 	include "footer.php";

@@ -299,7 +299,7 @@ session_start();
         <div class="container">
             <div class="header my-5">
                 <h1>Meet our Team </h1>
-                <p class="text-muted">Meet and Greet our Team Members</p>
+                <p class="text-muted">Meet and Greet our Current Managing Team!</p>
             </div>
             <div class="row">
                 <div class="col-md-6 col-lg-3">
