@@ -48,18 +48,18 @@
 							$loggedin = false;
 						}
 						if (!$loggedin) {
-							echo "<a href='login.php' class='my-auto'><i class='fas fa-user fa-2x'></i></a>";
+							echo "<a href='login.php' class='my-auto'><button type='button' class='btn btn-primary'>Log In</button></a>";
 						} else {
-							echo "<a href='logout.php' class='position-relative ms-4 my-auto'>
+							echo "<a href='logout.php' class='position-relative ms-3 my-auto'>
 							<i class='fas fa-solid fa-right-from-bracket fa-2x'></i></a>";
 						}
 						?>
 						<a>
 							<?php if (isset($_SESSION['email'])) {
 								echo
-								'<a class="nav-link px-4">
-						<b class="hov"><i class="bi bi-person"></i>' . " " . $_SESSION['email'];
-								'</b></a>';
+								'<a class="nav-link">
+						<i class="bi bi-person"></i>' . " " . $_SESSION['email'];
+								'</a>';
 							}
 							?>
 						</a>

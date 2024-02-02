@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 ?>
 <!DOCTYPE html>
@@ -88,8 +88,6 @@ session_start();
                 <div class="col-12 col-lg-6 col-xl-5">
                     <div class="d-flex justify-content-center mt-5 mt-xxl-0">
                         <div class="profile bg-gradient-primary-to-secondary">
-                            <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
-                            <!-- Watch a tutorial on how to do this on YouTube (link)-->
                             <img class="profile-img" src="img/srijana.png" alt="..." />
                             <div class="dots-1">
                                 <!-- SVG Dots-->
@@ -209,7 +207,7 @@ session_start();
                 <div class="col-12 col-lg-6 col-xl-7">
                     <div class="row justify-content-xl-center">
                         <div class="col-12 col-xl-11">
-                            <h2 class="mb-3">Who Are We?</h2>
+                            <h2 class="mb-3 text-md-center ">Who Are We?</h2>
                             <p class="lead fs-4 text-secondary mb-3">It all started with her!
                             </p>
                             <p class="mb-5">Srijana Aryal is an exemplary and inspirational woman who epitomizes resilience and determination in the face of adversity. As a single parent, she encountered financial crisis following the untimely demise of her husband. Despite the immense struggles she faced, Srijana refused to succumb to despair and demonstrated unwavering determination to create a better life for herself and her family.</p>
@@ -224,7 +222,7 @@ session_start();
         <div class="container">
             <div class="text-center pb-5 mb-5">
                 <h2 class="section-heading text-uppercase">Our Story</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">The origins of Gaun Ko Achar!</h3>
             </div>
             <ul class="timeline">
                 <li>
@@ -235,7 +233,8 @@ session_start();
                             <h4 class="subheading">Our Humble Beginnings</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <p class="text-muted">Srijana's entrepreneurial journey began with resilience in response to life's challenges. After her husband's demise, she embraced the opportunity to support herself and her son by entering the business world, focusing on pickle-making.
+                            </p>
                         </div>
                     </div>
                 </li>
@@ -247,7 +246,8 @@ session_start();
                             <h4 class="subheading">An Agency is Born</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <p class="text-muted">Starting small with just a few varieties, Srijana's passion gradually transformed her venture into a thriving enterprise. With dedication to quality, she expanded her product line to offer more than 10 diverse pickle varieties, each jar reflecting her hard work and love for her craft.
+                            </p>
                         </div>
                     </div>
                 </li>
@@ -259,7 +259,8 @@ session_start();
                             <h4 class="subheading">Transition to Full Service</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <p class="text-muted">The community's response to Srijana's pickles was phenomenal, with word of mouth attracting customers from far and wide. The overwhelming support not only boosted her confidence but also validated the significance of her venture. Having sold over 500 pickle jars, Srijana achieved financial independence and became a symbol of resilience and success in her community.
+                            </p>
                         </div>
                     </div>
                 </li>
@@ -271,7 +272,9 @@ session_start();
                             <h4 class="subheading">Phase Two Expansion</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <p class="text-muted">Today, Srijana stands proud of the thriving business she built from the ground up. Her journey from a grieving widow to a successful entrepreneur is an inspiring narrative that highlights the strength of the human spirit. Srijana's story exemplifies how determination, passion, and homemade goodness can transform adversity into a recipe for triumph.
+
+                            </p>
                         </div>
                     </div>
                 </li>
@@ -290,6 +293,70 @@ session_start();
         </div>
     </section>
     <!-- Our Story End -->
+
+    <!-- Team Section Start -->
+    <section class="team text-center py-5">
+        <div class="container">
+            <div class="header my-5">
+                <h1>Meet our Team </h1>
+                <p class="text-muted">Meet and Greet our Current Managing Team!</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="img-block mb-5">
+                        <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                        <div class="content mt-2">
+                            <h4>Zain Knob</h4>
+                            <p class="text-muted">Mechanical Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 ">
+                    <div class="img-block mb-5">
+                        <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t2.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                        <div class="content mt-2">
+                            <h4>Syndia Lee</h4>
+                            <p class="text-muted">Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="img-block mb-5">
+                        <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t1.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                        <div class="content mt-2">
+                            <h4>Noel Flantier</h4>
+                            <p class="text-muted">Joomla Specialist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="img-block mb-5">
+                        <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t3.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                        <div class="content mt-2">
+                            <h4>Bobby Doe</h4>
+                            <p class="text-muted">Street Artist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Team Section End -->
+
+    <!-- CTA Section Start-->
+    <div class="px-4 py-5 mt-5 text-center bg-light ">
+        <img class="d-block mx-auto mb-n5" src="./img/gaunkoachar.png" alt="" width="300" height="auto">
+        <h1 class="display-4 fw-bold text-body-emphasis mb-4">So, up for a taste of tradition?</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Hit our shop and try out authentic flavours - artisanal and handcrafted to perfection, made with love!</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                <a href='shop.php'> <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Shop Now!</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- CTA Section End -->
 
 
     <!-- Footer Start -->
