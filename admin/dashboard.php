@@ -138,7 +138,8 @@ include '../dbconnect.php';
 
   </div>
   <?php
-  require '../footer.php'; ?>
+  include '../footer.php';
+  ?>
 </body>
 
 </html>
