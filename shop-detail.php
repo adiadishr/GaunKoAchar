@@ -46,17 +46,6 @@ $pdetails = mysqli_query($conn, "SELECT * FROM products where product_id = '$pro
     </div>
     <!-- Spinner End -->
 
-<<<<<<< HEAD
-=======
-
-    <!-- Navbar start -->
-    <?php
-    include "navbar.php";
-    ?>
-    <!-- Navbar End -->
-
-
->>>>>>> be4ced13bda61f8b83377e0d31f89ad0b4a5d9ce
     <!-- Modal Search Start -->
     <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
@@ -120,6 +109,7 @@ $pdetails = mysqli_query($conn, "SELECT * FROM products where product_id = '$pro
                             <h4 class="fw-bold mb-3"><?php echo $product['product_name']?></h4>
                             <h5 class="fw-bold mb-3">Rs. <?php echo $product['product_price'];?></h5>
                             <p class="mb-4"><?php echo $product['product_description']?></p>
+    </form>
                             <div class="input-group quantity mt-4" style="width: 100px;">
                             <div class="input-group-btn">
                                 <button class="btn btn-sm btn-minus rounded-circle bg-light border">
@@ -128,7 +118,7 @@ $pdetails = mysqli_query($conn, "SELECT * FROM products where product_id = '$pro
                                     <div class="input-group-btn">
                                         <button class="btn btn-sm btn-plus rounded-circle bg-light border">
                                             <i class="fa fa-plus"></i></button></div></div>
-
+                                            <form class="" method="POST" action="addtocart.php">
                            <a href="cart.php" name="Add_To_cart" class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary"><i
                                     class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
     </form>

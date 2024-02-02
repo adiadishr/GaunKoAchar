@@ -125,8 +125,6 @@ include('dbconnect.php');
                             }
                             ?>
                             </tbody></table></div></div>
-                            
-                !!!!!!!!
                 <?php
                 $email = $_SESSION['email'];
                 $userDetail = mysqli_query($conn, "SELECT * FROM user  WHERE email = '$email'");
