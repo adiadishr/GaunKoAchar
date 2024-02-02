@@ -123,7 +123,8 @@ $pdetails = mysqli_query($conn, "SELECT * FROM products where product_id = '$pro
                 </div>
             </div>
             <form class="" method="POST" action="addtocart.php">
-                <a href="cart.php" name="Add_To_cart" class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                <a href="cart.php" name="Add_To_cart" class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary">
+                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
             </form>
     </div>
 <?php } ?>
