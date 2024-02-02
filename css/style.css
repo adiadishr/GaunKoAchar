@@ -662,14 +662,22 @@
   fill: var(--bs-secondary);
 }
 
-@media (min-width: 576px) {
+@media (min-width: 0px) and (max-width:576px) {
+  .profile .profile-img {
+    border-radius: 1rem !important;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
   .profile {
     height: 60vw;
     width: 60vw;
   }
 
   .profile .profile-img {
-    /* height: 65vw; */
+    border-radius: 1rem !important;
+    bottom: 0;
   }
 
   .profile .dots-1 {
@@ -693,14 +701,15 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .profile {
     height: 50vw;
     width: 50vw;
   }
 
   .profile .profile-img {
-    height: 55vw;
+    border-radius: 3rem;
+    bottom: 0;
   }
 
   .profile .dots-1 {
@@ -731,7 +740,7 @@
   }
 
   .profile .profile-img {
-    height: 45vw;
+    /* border-radius: 0rem  !important; */
   }
 
   .profile .dots-1 {
@@ -759,10 +768,6 @@
   .profile {
     height: 35vw;
     width: 35vw;
-  }
-
-  .profile .profile-img {
-    height: 40vw;
   }
 
   .profile .dots-1 {

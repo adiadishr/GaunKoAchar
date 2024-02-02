@@ -46,6 +46,17 @@ $pdetails = mysqli_query($conn, "SELECT * FROM products where product_id = '$pro
     </div>
     <!-- Spinner End -->
 
+<<<<<<< HEAD
+=======
+
+    <!-- Navbar start -->
+    <?php
+    include "navbar.php";
+    ?>
+    <!-- Navbar End -->
+
+
+>>>>>>> be4ced13bda61f8b83377e0d31f89ad0b4a5d9ce
     <!-- Modal Search Start -->
     <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
