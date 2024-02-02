@@ -167,7 +167,7 @@
                                 <div class="card-body p-md-5 mx-md-4">
 
                                     <div class="text-center">
-                                        <a href="index.html"><img src="./img/gaunkoachar.png" style="width: 150px;" alt="logo"></a>
+                                        <a href="index.php"><img src="./img/gaunkoachar.png" style="width: 150px;" alt="logo"></a>
                                         <h4 class="mt-1 mb-5 pb-1">Register</h4>
                                     </div>
                                     
@@ -264,7 +264,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <span class="text-light"><a href="index.html"><i class="fas fa-copyright text-light me-2"></i>Gaun
+                    <span class="text-light"><a href="index.php"><i class="fas fa-copyright text-light me-2"></i>Gaun
                             Ko
                             Achar</a>, All right reserved.</span>
                 </div>
