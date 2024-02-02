@@ -914,6 +914,10 @@
 
   .timeline>li {
     min-height: 100px;
+    /* margin-bottom: 100px; */
+  }
+
+  .timeline>li:last-child {
     margin-bottom: 100px;
   }
 
