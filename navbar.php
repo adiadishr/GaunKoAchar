@@ -50,7 +50,7 @@
 						if (!$loggedin) {
 							echo "<a href='login.php' class='my-auto'><button type='button' class='btn btn-primary'>Log In</button></a>";
 						} else {
-							echo "<a href='logout.php' class='position-relative ms-4 my-auto'>
+							echo "<a href='logout.php' class='position-relative ms-3 my-auto'>
 							<i class='fas fa-solid fa-right-from-bracket fa-2x'></i></a>";
 						}
 						?>

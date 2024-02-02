@@ -88,8 +88,6 @@ session_start();
                 <div class="col-12 col-lg-6 col-xl-5">
                     <div class="d-flex justify-content-center mt-5 mt-xxl-0">
                         <div class="profile bg-gradient-primary-to-secondary">
-                            <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
-                            <!-- Watch a tutorial on how to do this on YouTube (link)-->
                             <img class="profile-img" src="img/srijana.png" alt="..." />
                             <div class="dots-1">
                                 <!-- SVG Dots-->
@@ -209,7 +207,7 @@ session_start();
                 <div class="col-12 col-lg-6 col-xl-7">
                     <div class="row justify-content-xl-center">
                         <div class="col-12 col-xl-11">
-                            <h2 class="mb-3">Who Are We?</h2>
+                            <h2 class="mb-3 text-md-center ">Who Are We?</h2>
                             <p class="lead fs-4 text-secondary mb-3">It all started with her!
                             </p>
                             <p class="mb-5">Srijana Aryal is an exemplary and inspirational woman who epitomizes resilience and determination in the face of adversity. As a single parent, she encountered financial crisis following the untimely demise of her husband. Despite the immense struggles she faced, Srijana refused to succumb to despair and demonstrated unwavering determination to create a better life for herself and her family.</p>
@@ -297,33 +295,16 @@ session_start();
     <!-- Our Story End -->
 
     <!-- Banner Section Start-->
-	<div class="container-fluid cta bg-secondary mt-5">
-		<div class="container py-5">
-			<div class="row g-4 align-items-center">
-				<div class="col-lg-6">
-					<div class="py-4">
-						<h1 class="display-3 text-white">Fresh Exotic Fruits</h1>
-						<p class="fw-normal display-3 text-dark mb-4">in Our Store</p>
-						<p class="mb-4 text-dark">The generated Lorem Ipsum is therefore always free from repetition
-							injected humour, or non-characteristic words etc.</p>
-						<a href="#" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">BUY</a>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="position-relative">
-						<img src="img/baner-1.png" class="img-fluid w-100 rounded" alt="">
-						<div class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute" style="width: 140px; height: 140px; top: 0; left: 0;">
-							<h1 style="font-size: 100px;">1</h1>
-							<div class="d-flex flex-column">
-								<span class="h2 mb-0">50$</span>
-								<span class="h4 text-muted mb-0">kg</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-n5" src="./img/gaunkoachar.png" alt="" width="300" height="auto">
+    <h1 class="display-4 fw-bold text-body-emphasis mb-4">So, up for a taste of tradition?</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Hit our shop and try out authentic flavours - artisanal and handcrafted to perfection, made with love!</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Shop Now!</button>
+      </div>
+    </div>
+  </div>
 	<!-- Banner Section End -->
 
 
