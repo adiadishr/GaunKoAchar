@@ -66,7 +66,7 @@ session_start();
 					<div class="navbar-nav mx-auto">
 						<a href="index.php" class="nav-item nav-link active">Home</a>
 						<a href="shop.php" class="nav-item nav-link">Shop</a>
-						<a href="ourstory.html" class="nav-item nav-link">Our Story</a>
+						<a href="ourstory.php" class="nav-item nav-link">Our Story</a>
 						<!-- <div class="nav-item dropdown">
 							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
 							<div class="dropdown-menu m-0 bg-secondary rounded-0">
@@ -76,7 +76,7 @@ session_start();
 								<a href="404.html" class="dropdown-item">404 Page</a>
 							</div>
 						</div> -->
-						<a href="contact.html" class="nav-item nav-link">Contact</a>
+						<a href="contact.php" class="nav-item nav-link">Contact</a>
 						<a href="cart.php" class="nav-item nav-link">Checkout</a>
 					</div>
 					<div class="d-flex p-3 me-0">
