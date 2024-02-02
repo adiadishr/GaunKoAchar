@@ -18,13 +18,9 @@ include('dbconnect.php');
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<<<<<<< HEAD
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap"
         rel="stylesheet">
-=======
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet">
->>>>>>> be4ced13bda61f8b83377e0d31f89ad0b4a5d9ce
 
     <!-- Icon Font Stylesheet -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
@@ -45,19 +41,13 @@ include('dbconnect.php');
 <body>
 
     <!-- Spinner Start -->
-<<<<<<< HEAD
     <div id="spinner"
         class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
-=======
-    <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
->>>>>>> be4ced13bda61f8b83377e0d31f89ad0b4a5d9ce
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
 
 
-<<<<<<< HEAD
-=======
     <!-- Navbar start -->
     <?php
     include "navbar.php";
@@ -65,7 +55,6 @@ include('dbconnect.php');
     <!-- Navbar End -->
 
 
->>>>>>> be4ced13bda61f8b83377e0d31f89ad0b4a5d9ce
     <!-- Modal Search Start -->
     <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
@@ -76,12 +65,8 @@ include('dbconnect.php');
                 </div>
                 <div class="modal-body d-flex align-items-center">
                     <div class="input-group w-75 mx-auto d-flex">
-<<<<<<< HEAD
                         <input type="search" class="form-control p-3" placeholder="keywords"
                             aria-describedby="search-icon-1">
-=======
-                        <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
->>>>>>> be4ced13bda61f8b83377e0d31f89ad0b4a5d9ce
                         <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
                     </div>
                 </div>
@@ -535,33 +520,8 @@ while ($userinfo = mysqli_fetch_array($userDetail)) { ?>
         </div>
 
     </div>
-<<<<<<< HEAD
     <script type="text/javascript">
         var gt = 0; //grand total
-=======
-<?php
-} ?>
-</div>
-</div>
-
-<!-- Add this script at the end of your HTML body -->
-<script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", function() {
-        // Call the subTotal function when the page loads
-        subTotal();
-
-        // Add event listeners for quantity input changes
-        var quantityInputs = document.getElementsByClassName('iquantity');
-        for (var i = 0; i < quantityInputs.length; i++) {
-            quantityInputs[i].addEventListener('change', function() {
-                subTotal();
-            });
-        }
-    });
-
-    function subTotal() {
-        var gt = 0;
->>>>>>> be4ced13bda61f8b83377e0d31f89ad0b4a5d9ce
         var iprice = document.getElementsByClassName('iprice');
         var iquantity = document.getElementsByClassName('iquantity');
         var itotal = document.getElementsByClassName('itotal');
@@ -581,20 +541,10 @@ while ($userinfo = mysqli_fetch_array($userDetail)) { ?>
             subTotal();
         </script>
 
-<<<<<<< HEAD
 <?php
     include "footer.php";
     ?>
     
-=======
-        gtotal.innerText = gt.toFixed(2); // Display the total with two decimal places
-    }
-</script>
-<?php
-require './footer.php';
-?>
-
->>>>>>> be4ced13bda61f8b83377e0d31f89ad0b4a5d9ce
 </body>
 
 </html>
