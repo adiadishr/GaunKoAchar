@@ -57,9 +57,9 @@
 						<a>
 							<?php if (isset($_SESSION['email'])) {
 								echo
-								'<a class="nav-link px-4">
-						<b class="hov"><i class="bi bi-person"></i>' . " " . $_SESSION['email'];
-								'</b></a>';
+								'<a class="nav-link">
+						<i class="bi bi-person"></i>' . " " . $_SESSION['email'];
+								'</a>';
 							}
 							?>
 						</a>

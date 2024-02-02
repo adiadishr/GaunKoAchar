@@ -294,18 +294,69 @@ session_start();
     </section>
     <!-- Our Story End -->
 
-    <!-- Banner Section Start-->
-	<div class="px-4 py-5 my-5 text-center">
-    <img class="d-block mx-auto mb-n5" src="./img/gaunkoachar.png" alt="" width="300" height="auto">
-    <h1 class="display-4 fw-bold text-body-emphasis mb-4">So, up for a taste of tradition?</h1>
-    <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">Hit our shop and try out authentic flavours - artisanal and handcrafted to perfection, made with love!</p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Shop Now!</button>
-      </div>
+    <!-- Team Section Start -->
+    <section class="team text-center py-5">
+        <div class="container">
+            <div class="header my-5">
+                <h1>Meet our Team </h1>
+                <p class="text-muted">Meet and Greet our Team Members</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="img-block mb-5">
+                        <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                        <div class="content mt-2">
+                            <h4>Zain Knob</h4>
+                            <p class="text-muted">Mechanical Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 ">
+                    <div class="img-block mb-5">
+                        <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t2.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                        <div class="content mt-2">
+                            <h4>Syndia Lee</h4>
+                            <p class="text-muted">Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="img-block mb-5">
+                        <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t1.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                        <div class="content mt-2">
+                            <h4>Noel Flantier</h4>
+                            <p class="text-muted">Joomla Specialist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="img-block mb-5">
+                        <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t3.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                        <div class="content mt-2">
+                            <h4>Bobby Doe</h4>
+                            <p class="text-muted">Street Artist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Team Section End -->
+
+    <!-- CTA Section Start-->
+    <div class="px-4 py-5 mt-5 text-center bg-light ">
+        <img class="d-block mx-auto mb-n5" src="./img/gaunkoachar.png" alt="" width="300" height="auto">
+        <h1 class="display-4 fw-bold text-body-emphasis mb-4">So, up for a taste of tradition?</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Hit our shop and try out authentic flavours - artisanal and handcrafted to perfection, made with love!</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                <a href='shop.php'> <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Shop Now!</button></a>
+            </div>
+        </div>
     </div>
-  </div>
-	<!-- Banner Section End -->
+    <!-- CTA Section End -->
 
 
     <!-- Footer Start -->
