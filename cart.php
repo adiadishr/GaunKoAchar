@@ -130,6 +130,7 @@ include('dbconnect.php');
                         </table>
                     </div>
                 </div>
+
                 <?php
                 $email = $_SESSION['email'];
                 $userDetail = mysqli_query($conn, "SELECT * FROM user  WHERE email = '$email'");
@@ -171,34 +172,41 @@ include('dbconnect.php');
                                     } ?>
                         </div>
                     </div>
-                <?php
-                } ?>
             </div>
-        </div>
-        <script type="text/javascript">
-            var gt = 0; //grand total
-            var iprice = document.getElementsByClassName('iprice');
-            var iquantity = document.getElementsByClassName('iquantity');
-            var itotal = document.getElementsByClassName('itotal');
-            var gtotal = document.getElementById('gtotal');
-
-            function subTotal() {
-                gt = 0;
-                for (i = 0; i < iprice.length; i++) {
-                    itotal[i].innerText = (iprice[i].value) * (iquantity[i].value);
-                    gt = gt + (iprice[i].value) * (iquantity[i].value);
-                    /* price 650 quantity 1      gt=0+(650*1)
-                    price 750 quantity 2          gt= 650+(750*2) === gt = 2150
-                    price 850 quantity 1          gt= 2150+(850*1)=== gt = 3000 */
-                }
-                gtotal.innerText = gt;
-            }
-            subTotal();
-        </script>
-
         <?php
-        include "footer.php";
-        ?>
+                } ?>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var gt = 0; //grand total
+        var iprice = document.getElementsByClassName('iprice');
+        var iquantity = document.getElementsByClassName('iquantity');
+        var itotal = document.getElementsByClassName('itotal');
+        var gtotal = document.getElementById('gtotal');
+
+        function subTotal() {
+            gt = 0;
+            for (i = 0; i < iprice.length; i++) {
+                itotal[i].innerText = (iprice[i].value) * (iquantity[i].value);
+                gt = gt + (iprice[i].value) * (iquantity[i].value);
+                /* price 650 quantity 1      gt=0+(650*1)
+                price 750 quantity 2          gt= 650+(750*2) === gt = 2150
+                price 850 quantity 1          gt= 2150+(850*1)=== gt = 3000 */
+            }
+            gtotal.innerText = gt;
+        }
+        subTotal();
+    </script>
+    </div>
+    </div>
+    <!-- Cart Page End -->
+
+    <!-- Footer Start -->
+    <?php
+    include "footer.php";
+    ?>
+    <!-- Footer End -->
 
 </body>
 
