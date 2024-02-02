@@ -11,31 +11,9 @@ if (isset($_POST['update'])) {
     $product_stock = (int)$_POST['product_stock'];
     $product_description = mysqli_real_escape_string($conn, $_POST['product_description']);
 
-	if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	$product_image = $_FILES['product_image']['name'];
-	try {
-
-		// Code to Upload FIles
-		$target_path =  "uploads/products/";
-		$target_path = $target_path . basename($_FILES['product_image']['name']);
-	
-		if (move_uploaded_file($_FILES['product_image']['tmp_name'], $target_path)) {
-		  '<script>console.log("File uploaded successfully!");</script>';
-		} else {
-		  '<script>console.log("Sorry, file not uploaded, please try again!");</script>';
-		}
-		// Code to Upload Files
-	
-		$query = mysqli_query($conn, "UPDATE INTO products (`product_name`, `product_price`, `product_stock`, `product_description`, `product_image`) values ('$product_name', '$product_price', '$product_stock', '$product_description', '$product_image' )");
-	  } catch (Exception $e) {
-		$message = 'Unable to update product.' . $e;
-		throw new Exception('Unable to save details. Please try again later.', 0, $e);
-	  }
-	}
-
     // Use prepared statement to avoid SQL injection
-    $stmt = $conn->prepare("UPDATE products SET product_name=?, product_price=?, product_stock=?, product_description=?, product_image=? WHERE product_id=?");
-    $stmt->bind_param("siisi", $product_name, $product_price, $product_stock, $product_description,$product_image, $pid);
+    $stmt = $conn->prepare("UPDATE products SET product_name=?, product_price=?, product_stock=?, product_description=? WHERE product_id=?");
+    $stmt->bind_param("siisi", $product_name, $product_price, $product_stock, $product_description, $pid);
 
     if ($stmt->execute()) {
         $err = "<font color='blue'>Product updated </font>";
@@ -117,10 +95,6 @@ include '../includes/aside.php'; ?>
 					<div class="form-group mb-3">
 						<b>Enter Description</b>
 						<textarea name="product_description" cols="10" rows="5" class="mt-2 border-secondary form-control"><?php echo $res['product_description']; ?></textarea>
-					</div>
-					<div class="form-group col-md-6 col-lg-6">
-						<label>image URL</label>
-						<input type="file" name="product_image" id="image" class="form-control border-1 border-secondary" required placeholder="image URL">
 					</div>
 
 					<div class="text-white form-group mt-4">
