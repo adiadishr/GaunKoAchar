@@ -1,5 +1,5 @@
 <?php
-include "navbar.php";
+session_start();
 include "dbconnect.php";
 $product_id = $_GET['product_id'];
 $pdetails = mysqli_query($conn, "SELECT * FROM products where product_id = '$product_id'");
@@ -45,7 +45,11 @@ $pdetails = mysqli_query($conn, "SELECT * FROM products where product_id = '$pro
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
-
+<!-- Navbar Start -->
+<?php
+include('navbar.php');
+?>
+<!-- Navbar End -->
     <!-- Modal Search Start -->
     <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">

@@ -107,9 +107,9 @@ $products = mysqli_query($conn, "SELECT * FROM products");
                         </div>
                     </div>
 
-                    <div class="col-lg-9" style="align-self:center;">
+                    <div class="col-12">
                         <div class="row g-4 justify-content-center">
-                            <div class="col-md-6 col-lg-6 col-xl-4">
+                            <div class="col-md-6 col-lg-6 col-xl-4 card">
                                 <?php
                                 while ($prod = mysqli_fetch_array($products)) { ?>
                                     <div class="rounded position-relative item">

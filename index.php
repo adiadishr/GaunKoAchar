@@ -85,12 +85,19 @@ session_start();
 							<i class="fa fa-shopping-bag fa-2x"></i>
 							<span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
 						</a>
-						<a href="login.php" class="my-auto">
-							<i class="fas fa-user fa-2x"></i>
-						</a>
-						<a href="logout.php" class="position-relative ms-4 my-auto">
-							<i class="fas fa-solid fa-right-from-bracket fa-2x"></i>
-						</a>
+						<?php
+						if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+							$loggedin = true;
+						} else {
+							$loggedin = false;
+						}
+						if (!$loggedin) {
+							echo "<a href='login.php' class='my-auto'><i class='fas fa-user fa-2x'></i></a>";
+						} else {
+							echo "<a href='logout.php' class='position-relative ms-4 my-auto'>
+							<i class='fas fa-solid fa-right-from-bracket fa-2x'></i></a>";
+						}
+						?>
 						<a>
 							<?php if (isset($_SESSION['email'])) {
 								echo
