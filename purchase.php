@@ -29,7 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         unset($_SESSION['cart']);
 
-        echo "<script>alert('Order Placed'); window.location.href='./index.php';</script>";
+        echo "<script>alert('Order Placed'); 
+        window.location.href='./index.php';</script>";
     } else {
         echo "<script>
     alert('Cart is empty.');

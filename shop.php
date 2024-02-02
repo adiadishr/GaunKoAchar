@@ -130,8 +130,9 @@ $products = mysqli_query($conn, "SELECT * FROM products");
                                                         <i class="fa fa-eye text-primary py-2 px-1"></i></a> <?php } else { ?>
                                                     <a href='login.php' class='btn border-secondary rounded-circle'>
                                                         <i class="fa fa-eye text-primary py-2 px-1"></i></a> <?php } ?>
+                                                        <form method="POST" action="./addtocart.php">
                                                 <a href="cart.php" name="Add_To_cart" class="btn border border-secondary rounded-pill px-3 text-primary">
-                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a></form>
 
                                             </div>
 
