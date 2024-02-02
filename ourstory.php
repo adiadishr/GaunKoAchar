@@ -297,7 +297,7 @@ session_start();
     <!-- Our Story End -->
 
     <!-- Banner Section Start-->
-	<div class="container-fluid banner bg-secondary mt-5">
+	<div class="container-fluid cta bg-secondary mt-5">
 		<div class="container py-5">
 			<div class="row g-4 align-items-center">
 				<div class="col-lg-6">
