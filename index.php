@@ -12,9 +12,7 @@
 	<!-- Google Web Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet">
 
 	<!-- Icon Font Stylesheet -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
@@ -35,8 +33,7 @@
 <body>
 
 	<!-- Spinner Start -->
-	<div id="spinner"
-		class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+	<div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
 		<div class="spinner-grow text-primary" role="status"></div>
 	</div>
 	<!-- Spinner End -->
@@ -46,14 +43,11 @@
 		<div class="topbar bg-primary">
 			<div class="d-flex justify-content-between">
 				<div class="top-info ps-2">
-					<small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#"
-							class="text-white">Kathmandu, Nepal</a></small>
-					<small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#"
-							class="text-white">gaunkoachar@gmail.com</a></small>
+					<small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">Kathmandu, Nepal</a></small>
+					<small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">gaunkoachar@gmail.com</a></small>
 				</div>
 				<div class="top-link pe-2">
-					<small class="me-3"><i class="fas fa-phone-alt me-2 text-secondary"></i> <a href="#"
-						class="text-white">+977 9843011770</a></small>
+					<small class="me-3"><i class="fas fa-phone-alt me-2 text-secondary"></i> <a href="#" class="text-white">+977 9843011770</a></small>
 				</div>
 			</div>
 		</div>
@@ -62,8 +56,7 @@
 				<a href="index.html" class="navbar-brand">
 					<h1 class="display-6"><img src="./img/gaunkoachar.png" class="main-logo" /></h1>
 				</a>
-				<button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
-					data-bs-target="#navbarCollapse">
+				<button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
 					<span class="fa fa-bars text-primary"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarCollapse">
@@ -84,23 +77,25 @@
 						<a href="cart.php" class="nav-item nav-link">Checkout</a>
 					</div>
 					<div class="d-flex p-3 me-0">
-						<button class="btn-search btn btn-md-square rounded-circle me-4" data-bs-toggle="modal"
-							data-bs-target="#searchModal"><i class="fas fa-2x fa-search text-primary"></i></button>
+						<button class="btn-search btn btn-md-square rounded-circle me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-2x fa-search text-primary"></i></button>
 						<a href="cart.php" class="position-relative me-4 my-auto">
 							<i class="fa fa-shopping-bag fa-2x"></i>
-							<span
-								class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1"
-								style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
+							<span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
 						</a>
 						<a href="login.php" class="my-auto">
 							<i class="fas fa-user fa-2x"></i>
 						</a>
+						<a href="login.php" class="position-relative ms-4 my-auto">
+							<i class="fas fa-solid fa-right-from-bracket fa-2x"></i>
+						</a>
 						<a>
-						<?php if (isset($_SESSION['email'])) {
-                        echo
-						'<a class="nav-link px-4">
-						<b class="hov"><i class="bi bi-person"></i>' . " " . $_SESSION['email'];'</b></a>';} 
-						?> 
+							<?php if (isset($_SESSION['email'])) {
+								echo
+								'<a class="nav-link px-4">
+						<b class="hov"><i class="bi bi-person"></i>' . " " . $_SESSION['email'];
+								'</b></a>';
+							}
+							?>
 						</a>
 					</div>
 				</div>
@@ -120,8 +115,7 @@
 				</div>
 				<div class="modal-body d-flex align-items-center">
 					<div class="input-group w-75 mx-auto d-flex">
-						<input type="search" class="form-control p-3" placeholder="keywords"
-							aria-describedby="search-icon-1">
+						<input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
 						<span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
 					</div>
 				</div>
@@ -131,8 +125,8 @@
 	<!-- Modal Search End -->
 
 
-	  <!-- Hero Start -->
-	  <div class="container-fluid py-5 mb-5 hero-header">
+	<!-- Hero Start -->
+	<div class="container-fluid py-5 mb-5 hero-header">
 		<div class="container py-5">
 			<div class="row g-5 align-items-center">
 				<div class="col-md-12 col-lg-7">
@@ -232,15 +226,13 @@
 					<div class="vesitable-img">
 						<img src="img/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
 					</div>
-					<div class="text-white bg-primary px-3 py-1 rounded position-absolute"
-						style="top: 10px; right: 10px;">Vegetable</div>
+					<div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
 					<div class="p-4 rounded-bottom">
 						<h4>Parsely</h4>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
 						<div class="d-flex justify-content-between flex-lg-wrap">
 							<p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
-									class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
 						</div>
 					</div>
 				</div>
@@ -248,15 +240,13 @@
 					<div class="vesitable-img">
 						<img src="img/vegetable-item-1.jpg" class="img-fluid w-100 rounded-top" alt="">
 					</div>
-					<div class="text-white bg-primary px-3 py-1 rounded position-absolute"
-						style="top: 10px; right: 10px;">Vegetable</div>
+					<div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
 					<div class="p-4 rounded-bottom">
 						<h4>Parsely</h4>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
 						<div class="d-flex justify-content-between flex-lg-wrap">
 							<p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
-									class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
 						</div>
 					</div>
 				</div>
@@ -264,15 +254,13 @@
 					<div class="vesitable-img">
 						<img src="img/vegetable-item-3.png" class="img-fluid w-100 rounded-top bg-light" alt="">
 					</div>
-					<div class="text-white bg-primary px-3 py-1 rounded position-absolute"
-						style="top: 10px; right: 10px;">Vegetable</div>
+					<div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
 					<div class="p-4 rounded-bottom">
 						<h4>Banana</h4>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
 						<div class="d-flex justify-content-between flex-lg-wrap">
 							<p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
-									class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
 						</div>
 					</div>
 				</div>
@@ -280,15 +268,13 @@
 					<div class="vesitable-img">
 						<img src="img/vegetable-item-4.jpg" class="img-fluid w-100 rounded-top" alt="">
 					</div>
-					<div class="text-white bg-primary px-3 py-1 rounded position-absolute"
-						style="top: 10px; right: 10px;">Vegetable</div>
+					<div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
 					<div class="p-4 rounded-bottom">
 						<h4>Bell Papper</h4>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
 						<div class="d-flex justify-content-between flex-lg-wrap">
 							<p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
-									class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
 						</div>
 					</div>
 				</div>
@@ -296,15 +282,13 @@
 					<div class="vesitable-img">
 						<img src="img/vegetable-item-5.jpg" class="img-fluid w-100 rounded-top" alt="">
 					</div>
-					<div class="text-white bg-primary px-3 py-1 rounded position-absolute"
-						style="top: 10px; right: 10px;">Vegetable</div>
+					<div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
 					<div class="p-4 rounded-bottom">
 						<h4>Potatoes</h4>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
 						<div class="d-flex justify-content-between flex-lg-wrap">
 							<p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
-									class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
 						</div>
 					</div>
 				</div>
@@ -312,15 +296,13 @@
 					<div class="vesitable-img">
 						<img src="img/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
 					</div>
-					<div class="text-white bg-primary px-3 py-1 rounded position-absolute"
-						style="top: 10px; right: 10px;">Vegetable</div>
+					<div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
 					<div class="p-4 rounded-bottom">
 						<h4>Parsely</h4>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
 						<div class="d-flex justify-content-between flex-lg-wrap">
 							<p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
-									class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
 						</div>
 					</div>
 				</div>
@@ -328,15 +310,13 @@
 					<div class="vesitable-img">
 						<img src="img/vegetable-item-5.jpg" class="img-fluid w-100 rounded-top" alt="">
 					</div>
-					<div class="text-white bg-primary px-3 py-1 rounded position-absolute"
-						style="top: 10px; right: 10px;">Vegetable</div>
+					<div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
 					<div class="p-4 rounded-bottom">
 						<h4>Potatoes</h4>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
 						<div class="d-flex justify-content-between flex-lg-wrap">
 							<p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
-									class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
 						</div>
 					</div>
 				</div>
@@ -344,15 +324,13 @@
 					<div class="vesitable-img">
 						<img src="img/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
 					</div>
-					<div class="text-white bg-primary px-3 py-1 rounded position-absolute"
-						style="top: 10px; right: 10px;">Vegetable</div>
+					<div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
 					<div class="p-4 rounded-bottom">
 						<h4>Parsely</h4>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
 						<div class="d-flex justify-content-between flex-lg-wrap">
 							<p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
-									class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
 						</div>
 					</div>
 				</div>
@@ -372,15 +350,13 @@
 						<p class="fw-normal display-3 text-dark mb-4">in Our Store</p>
 						<p class="mb-4 text-dark">The generated Lorem Ipsum is therefore always free from repetition
 							injected humour, or non-characteristic words etc.</p>
-						<a href="#"
-							class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">BUY</a>
+						<a href="#" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">BUY</a>
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="position-relative">
 						<img src="img/baner-1.png" class="img-fluid w-100 rounded" alt="">
-						<div class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute"
-							style="width: 140px; height: 140px; top: 0; left: 0;">
+						<div class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute" style="width: 140px; height: 140px; top: 0; left: 0;">
 							<h1 style="font-size: 100px;">1</h1>
 							<div class="d-flex flex-column">
 								<span class="h2 mb-0">50$</span>
@@ -404,8 +380,7 @@
 			<div class="owl-carousel testimonial-carousel">
 				<div class="testimonial-item img-border-radius bg-light rounded p-4">
 					<div class="position-relative">
-						<i class="fa fa-quote-right fa-2x text-secondary position-absolute"
-							style="bottom: 30px; right: 0;"></i>
+						<i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
 						<div class="mb-4 pb-4 border-bottom border-secondary">
 							<p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the
 								industry's standard dummy text ever since the 1500s,
@@ -413,8 +388,7 @@
 						</div>
 						<div class="d-flex align-items-center flex-nowrap">
 							<div class="bg-secondary rounded">
-								<img src="img/testimonial-1.jpg" class="img-fluid rounded"
-									style="width: 100px; height: 100px;" alt="">
+								<img src="img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
 							</div>
 							<div class="ms-4 d-block">
 								<h4 class="text-dark">Client Name</h4>
@@ -432,8 +406,7 @@
 				</div>
 				<div class="testimonial-item img-border-radius bg-light rounded p-4">
 					<div class="position-relative">
-						<i class="fa fa-quote-right fa-2x text-secondary position-absolute"
-							style="bottom: 30px; right: 0;"></i>
+						<i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
 						<div class="mb-4 pb-4 border-bottom border-secondary">
 							<p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the
 								industry's standard dummy text ever since the 1500s,
@@ -441,8 +414,7 @@
 						</div>
 						<div class="d-flex align-items-center flex-nowrap">
 							<div class="bg-secondary rounded">
-								<img src="img/testimonial-1.jpg" class="img-fluid rounded"
-									style="width: 100px; height: 100px;" alt="">
+								<img src="img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
 							</div>
 							<div class="ms-4 d-block">
 								<h4 class="text-dark">Client Name</h4>
@@ -460,8 +432,7 @@
 				</div>
 				<div class="testimonial-item img-border-radius bg-light rounded p-4">
 					<div class="position-relative">
-						<i class="fa fa-quote-right fa-2x text-secondary position-absolute"
-							style="bottom: 30px; right: 0;"></i>
+						<i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
 						<div class="mb-4 pb-4 border-bottom border-secondary">
 							<p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the
 								industry's standard dummy text ever since the 1500s,
@@ -469,8 +440,7 @@
 						</div>
 						<div class="d-flex align-items-center flex-nowrap">
 							<div class="bg-secondary rounded">
-								<img src="img/testimonial-1.jpg" class="img-fluid rounded"
-									style="width: 100px; height: 100px;" alt="">
+								<img src="img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
 							</div>
 							<div class="ms-4 d-block">
 								<h4 class="text-dark">Client Name</h4>
@@ -490,9 +460,11 @@
 		</div>
 	</div>
 	<!-- Tastimonial End -->
-<?php
-    include "footer.php";
-?>
+
+	<?php
+	include "footer.php";
+	?>
+
 </body>
 
 </html>
