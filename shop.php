@@ -161,6 +161,8 @@ $products = mysqli_query($conn, "SELECT * FROM products");
     </div>
     </div>
     <!-- Fruits Shop End-->
+
+    
     <?php
     include "footer.php";
     ?>
