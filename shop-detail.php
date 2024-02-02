@@ -92,7 +92,6 @@ $pdetails = mysqli_query($conn, "SELECT * FROM products where product_id = '$pro
         header("Location:shop.php?product_id=" . $product_id);
     }
     ?>
-    !!!!!!!
     <div class="container-fluid py-5 mt-5">
         <?php while ($product = mysqli_fetch_assoc($pdetails)) { ?>
             <form class="" method="POST" action="addtocart.php">
@@ -131,12 +130,6 @@ $pdetails = mysqli_query($conn, "SELECT * FROM products where product_id = '$pro
 
 
 <div class="col-lg-12">
-    <nav>
-        <div class="nav nav-tabs mb-3">
-            <button class="nav-link active border-white border-bottom-0" type="button" role="tab" id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about" aria-controls="nav-about" aria-selected="true">Description</button>
-
-        </div>
-    </nav>
 
     <h1 class="fw-bold mb-0">Related products</h1>
     <div class="vesitable">
@@ -256,8 +249,6 @@ $pdetails = mysqli_query($conn, "SELECT * FROM products where product_id = '$pro
         </div>
     </div>
 </div>
-</div>
-!!!!!!!
 <!-- Single Product End -->
 
 <?php
