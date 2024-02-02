@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -133,7 +136,12 @@
 					<h4 class="mb-3 text-secondary">100% Organic Foods</h4>
 					<h1 class="mb-5 display-3 text-primary">Organic Veggies & Fruits Foods</h1>
 					<div class="position-relative mx-auto">
-						<a href="login.php"><button type="submit" class="btn btn-primary border-2 border-secondary position-absolute rounded-pill text-white py-2 px-5">Shop Now</button></a>
+						<button type="submit" class="btn btn-primary border-2 border-secondary position-absolute rounded-pill text-white py-2 px-5">Shop Now</button>
+						<?php if(isset($_SESSION['email'])){
+							echo '<a href="./shop.php" class="btn btn-primary border-2 border-secondary position-absolute rounded-pill text-white py-2 px-5">Shop Now</a>';
+						}else{
+							echo '<a href="./login.php" class="btn btn-primary border-2 border-secondary position-absolute rounded-pill text-white py-2 px-5">Shop Now</a>';
+							}?>
 					</div>
 				</div>
 				<div class="col-md-12 col-lg-5">
