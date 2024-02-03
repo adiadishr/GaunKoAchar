@@ -93,7 +93,10 @@ $pdetails = mysqli_query($conn, "SELECT * FROM products where product_id = '$pro
     }
     ?>
     <div class="container-fluid py-5 mt-5">
-        <?php while ($product = mysqli_fetch_assoc($pdetails)) { ?>
+        <?php
+        $product_id = $_GET['product_id'];
+        $pdetails = mysqli_query($conn, "SELECT * FROM products where product_id = '$product_id'");
+         while ($product = mysqli_fetch_assoc($pdetails)) { ?>
             <form class="" method="POST" action="addtocart.php">
                 <div class="container py-5">
                     <div class="row g-4 mb-5">
@@ -122,10 +125,15 @@ $pdetails = mysqli_query($conn, "SELECT * FROM products where product_id = '$pro
                         <i class="fa fa-plus"></i></button>
                 </div>
             </div>
-            <form class="" method="POST" action="addtocart.php">
-                <a href="cart.php" name="Add_To_cart" class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary">
-                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-            </form>
+            <form method="POST" action="addtocart.php">
+    <input type="hidden" name="item_name" value="<?php echo $product['product_name']; ?>">
+    <input type="hidden" name="price" value="<?php echo $product['product_price']; ?>">
+    <input type="number" name="quantity" value="1" min="1">
+    <button type="submit" name="Add_To_cart" class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary">
+        <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+    </button>
+</form>
+
     </div>
 <?php } ?>
 

@@ -80,14 +80,15 @@ $products = mysqli_query($conn, "SELECT * FROM products");
     <!-- Single Page Header End -->
 
 
-    <!-- achar Shop Start-->
-    <div class="container-fluid fruite py-5">
+     <!-- Fruits Shop Start -->
+     <div class="container-fluid fruite py-5">
         <div class="container py-5">
             <h1 class="mb-4">Our Store</h1>
             <div class="row g-4">
                 <div class="col-lg-12" style="display:flex; flex-direction:column;">
                     <div class="row g-4">
                         <div class="col-xl-5">
+                            <!-- Search input form -->
                             <div class="input-group w-100 mx-auto d-flex">
                                 <input type="search" class="form-control p-3" placeholder="Search Items" aria-describedby="search-icon-1">
                                 <button id="btn-search" class="border-1 input-group-text py-3 px-4"><span id="search-icon-1"><i class="fa fa-search"></i></span></button>
@@ -95,6 +96,7 @@ $products = mysqli_query($conn, "SELECT * FROM products");
                         </div>
                         <div class="col-4"></div>
                         <div class="col-xl-3">
+                            <!-- Sorting dropdown -->
                             <div class="bg-light ps-3 py-3 rounded d-flex justify-content-between mb-4">
                                 <label for="fruits">Default Sorting:</label>
                                 <select id="fruits" name="fruitlist" class="border-0 form-select-sm bg-light me-3" form="fruitform">
@@ -109,9 +111,10 @@ $products = mysqli_query($conn, "SELECT * FROM products");
 
                     <div class="col-12">
                         <div class="row g-4 justify-content-center">
-                            <div class="col-md-6 col-lg-6 col-xl-4 card">
-                                <?php
-                                while ($prod = mysqli_fetch_array($products)) { ?>
+                            <?php
+                            while ($prod = mysqli_fetch_array($products)) {
+                            ?>
+                                <div class="col-md-6 col-lg-6 col-xl-4 card">
                                     <div class="rounded position-relative item">
                                         <div class="fruite-img">
                                             <img src="uploads/<?php echo $prod['product_image']; ?>" class="img-fluid w-100 rounded-top" alt="">
@@ -125,45 +128,53 @@ $products = mysqli_query($conn, "SELECT * FROM products");
                                             </div>
                                             <div class="d-flex justify-content-between flex-lg-wrap">
                                                 <?php if (isset($_SESSION['email'])) { ?>
-
+                                                    <!-- Link to Shop Detail -->
                                                     <a href="shop-detail.php?product_id=<?php echo $prod["product_id"]; ?>" class="btn border-secondary rounded-circle">
-                                                        <i class="fa fa-eye text-primary py-2 px-1"></i></a> <?php } else { ?>
+                                                        <i class="fa fa-eye text-primary py-2 px-1"></i>
+                                                    </a>
+                                                <?php } else { ?>
+                                                    <!-- Link to Login (if not logged in) -->
                                                     <a href='login.php' class='btn border-secondary rounded-circle'>
-                                                        <i class="fa fa-eye text-primary py-2 px-1"></i></a> <?php } ?>
-                                                        <form method="POST" action="./addtocart.php">
-                                                <a href="cart.php" name="Add_To_cart" class="btn border border-secondary rounded-pill px-3 text-primary">
-                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a></form>
+                                                        <i class="fa fa-eye text-primary py-2 px-1"></i>
+                                                    </a>
+                                                <?php } ?>
+<!-- Add to Cart Form -->
+<form method="POST" action="./addtocart.php">
+    <input type="hidden" name="item_name" value="<?php echo $prod['product_name']; ?>">
+    <input type="hidden" name="price" value="<?php echo $prod['product_price']; ?>">
+    <input type="number" name="quantity" value="1" min="1">
+    <button type="submit" name="Add_To_cart" class="btn border border-secondary rounded-pill px-3 text-primary">
+        <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+    </button>
+</form>
 
                                             </div>
-
                                         </div>
-                                    <?php } ?>
                                     </div>
-                            </div>
-
-
-                            <div class="col-12">
-                                <div class="pagination d-flex justify-content-center mt-5">
-                                    <a href="#" class="rounded">&laquo;</a>
-                                    <a href="#" class="active rounded">1</a>
-                                    <a href="#" class="rounded">2</a>
-                                    <a href="#" class="rounded">3</a>
-                                    <a href="#" class="rounded">4</a>
-                                    <a href="#" class="rounded">5</a>
-                                    <a href="#" class="rounded">6</a>
-                                    <a href="#" class="rounded">&raquo;</a>
                                 </div>
-                            </div>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-    <!-- Fruits Shop End-->
+    <!-- Fruits Shop End -->
 
-    
+    <!-- Pagination Links -->
+    <div class="col-12">
+        <div class="pagination d-flex justify-content-center mt-5">
+            <a href="#" class="rounded">&laquo;</a>
+            <a href="#" class="active rounded">1</a>
+            <a href="#" class="rounded">2</a>
+            <a href="#" class="rounded">3</a>
+            <a href="#" class="rounded">4</a>
+            <a href="#" class="rounded">5</a>
+            <a href="#" class="rounded">6</a>
+            <a href="#" class="rounded">&raquo;</a>
+        </div>
+    </div>
+
     <?php
     include "footer.php";
     ?>
