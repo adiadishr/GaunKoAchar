@@ -8,11 +8,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $productDetail = mysqli_query($conn, "SELECT * FROM products WHERE product_name = '$product_name'");
         $product = mysqli_fetch_array($productDetail);
 
-        if ($product['stock'] < $_POST['quantity']) {
-            echo '<script>alert("Insufficient stock");
-                window.location.href="./shop-detail.php";</script>';
-            exit();
-        }
+        // if ($product['stock'] < $_POST['quantity']) {
+        //     echo '<script>alert("Insufficient stock");
+        //         window.location.href="./shop-detail.php";</script>';
+        //     exit();
+        // }
 
         if (isset($_SESSION['cart'])) {
             if (is_string($_SESSION['cart'])) {
