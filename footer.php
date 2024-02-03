@@ -3,7 +3,7 @@
       <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
         <div class="row g-4">
           <div class="col-lg-3">
-            <a href="#">
+            <a href="index.php">
               <h1 class="text-primary mb-0">गाउँको अचार</h1>
             </a>
           </div>

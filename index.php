@@ -94,7 +94,7 @@ session_start();
 						if (!$loggedin) {
 							echo "<a href='login.php' class='my-auto'><button type='button' class='btn btn-primary'>Log In</button></a>";
 						} else {
-							echo "<a href='logout.php' class='position-relative ms-4 my-auto'>
+							echo "<a href='logout.php' class='position-relative ms-3 my-auto'>
 							<i class='fas fa-solid fa-right-from-bracket fa-2x'></i></a>";
 						}
 						?>
@@ -186,11 +186,11 @@ session_start();
 				<div class="col-md-6 col-lg-3">
 					<div class="featurs-item text-center rounded bg-light p-4">
 						<div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
-							<i class="fas fa-car-side fa-3x text-white"></i>
+							<i class="fas fa-motorcycle fa-3x text-white"></i>
 						</div>
 						<div class="featurs-content text-center">
 							<h5>Free Shipping</h5>
-							<p class="mb-0">Free on order over $300</p>
+							<p class="mb-0">Free on order over Rs.5000</p>
 						</div>
 					</div>
 				</div>
@@ -200,19 +200,19 @@ session_start();
 							<i class="fas fa-user-shield fa-3x text-white"></i>
 						</div>
 						<div class="featurs-content text-center">
-							<h5>Security Payment</h5>
-							<p class="mb-0">100% security payment</p>
+							<h5>Secure Payment</h5>
+							<p class="mb-0">100% secure payment</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-3">
 					<div class="featurs-item text-center rounded bg-light p-4">
 						<div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
-							<i class="fas fa-exchange-alt fa-3x text-white"></i>
+							<i class="fas fa-leaf fa-3x text-white"></i>
 						</div>
 						<div class="featurs-content text-center">
-							<h5>30 Day Return</h5>
-							<p class="mb-0">30 day money guarantee</p>
+							<h5>100% organic  </h5>
+							<p class="mb-0">No preservatives used</p>
 						</div>
 					</div>
 				</div>

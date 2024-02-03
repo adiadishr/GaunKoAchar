@@ -229,7 +229,7 @@ session_start();
                     <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4>2009-2011</h4>
+                            <!-- <h4>2009-2011</h4> -->
                             <h4 class="subheading">Our Humble Beginnings</h4>
                         </div>
                         <div class="timeline-body">
@@ -242,8 +242,8 @@ session_start();
                     <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4>March 2011</h4>
-                            <h4 class="subheading">An Agency is Born</h4>
+                            <!-- <h4>March 2011</h4> -->
+                            <h4 class="subheading">Starting up - a challenge!</h4>
                         </div>
                         <div class="timeline-body">
                             <p class="text-muted">Starting small with just a few varieties, Srijana's passion gradually transformed her venture into a thriving enterprise. With dedication to quality, she expanded her product line to offer more than 10 diverse pickle varieties, each jar reflecting her hard work and love for her craft.
@@ -255,8 +255,8 @@ session_start();
                     <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4>December 2015</h4>
-                            <h4 class="subheading">Transition to Full Service</h4>
+                            <!-- <h4>December 2015</h4> -->
+                            <h4 class="subheading">Growth, Growth and Growth</h4>
                         </div>
                         <div class="timeline-body">
                             <p class="text-muted">The community's response to Srijana's pickles was phenomenal, with word of mouth attracting customers from far and wide. The overwhelming support not only boosted her confidence but also validated the significance of her venture. Having sold over 500 pickle jars, Srijana achieved financial independence and became a symbol of resilience and success in her community.
@@ -268,8 +268,8 @@ session_start();
                     <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4>July 2020</h4>
-                            <h4 class="subheading">Phase Two Expansion</h4>
+                            <!-- <h4>July 2020</h4> -->
+                            <h4 class="subheading">Here we are!</h4>
                         </div>
                         <div class="timeline-body">
                             <p class="text-muted">Today, Srijana stands proud of the thriving business she built from the ground up. Her journey from a grieving widow to a successful entrepreneur is an inspiring narrative that highlights the strength of the human spirit. Srijana's story exemplifies how determination, passion, and homemade goodness can transform adversity into a recipe for triumph.
