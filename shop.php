@@ -80,8 +80,8 @@ $products = mysqli_query($conn, "SELECT * FROM products");
     <!-- Single Page Header End -->
 
 
-     <!-- Fruits Shop Start -->
-     <div class="container-fluid fruite py-5">
+    <!-- Fruits Shop Start -->
+    <div class="container-fluid fruite py-5">
         <div class="container py-5">
             <h1 class="mb-4">Our Store</h1>
             <div class="row g-4">
@@ -110,7 +110,7 @@ $products = mysqli_query($conn, "SELECT * FROM products");
                     </div>
 
                     <div class="col-12">
-                        <div class="row g-4 justify-content-center">
+                        <div class="row g-4">
                             <?php
                             while ($prod = mysqli_fetch_array($products)) {
                             ?>
@@ -121,32 +121,41 @@ $products = mysqli_query($conn, "SELECT * FROM products");
                                         </div>
                                         <div class="p-4 border border-secondary border-top-0 rounded-bottom">
                                             <h4><?php echo $prod['product_name'] ?></h4>
-                                            <p><?php echo $prod['product_description'] ?></p>
+                                            <p><?php echo preg_replace('/\v+|\\\r\\\n/Ui','<br/>',$prod['product_description']) ?></p>
 
                                             <div class="row g-4 mb-2">
                                                 <p class="text-dark fs-5 fw-bold">Rs.<?php echo $prod['product_price'] ?></p>
                                             </div>
                                             <div class="d-flex justify-content-between flex-lg-wrap">
-                                                <?php if (isset($_SESSION['email'])) { ?>
-                                                    <!-- Link to Shop Detail -->
-                                                    <a href="shop-detail.php?product_id=<?php echo $prod["product_id"]; ?>" class="btn border-secondary rounded-circle">
-                                                        <i class="fa fa-eye text-primary py-2 px-1"></i>
-                                                    </a>
-                                                <?php } else { ?>
-                                                    <!-- Link to Login (if not logged in) -->
-                                                    <a href='login.php' class='btn border-secondary rounded-circle'>
-                                                        <i class="fa fa-eye text-primary py-2 px-1"></i>
-                                                    </a>
-                                                <?php } ?>
-<!-- Add to Cart Form -->
-<form method="POST" action="./addtocart.php">
-    <input type="hidden" name="item_name" value="<?php echo $prod['product_name']; ?>">
-    <input type="hidden" name="price" value="<?php echo $prod['product_price']; ?>">
-    <input type="number" name="quantity" value="1" min="1">
-    <button type="submit" name="Add_To_cart" class="btn border border-secondary rounded-pill px-3 text-primary">
-        <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
-    </button>
-</form>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <?php if (isset($_SESSION['email'])) { ?>
+                                                            <!-- Link to Shop Detail -->
+                                                            <a href="shop-detail.php?product_id=<?php echo $prod["product_id"]; ?>" class="btn border-secondary rounded-circle">
+                                                                <i class="fa fa-eye text-primary py-2 px-1"></i>
+                                                            </a>
+                                                        <?php } else { ?>
+                                                            <!-- Link to Login (if not logged in) -->
+                                                            <a href='login.php' class='btn border-secondary rounded-circle'>
+                                                                <i class="fa fa-eye text-primary py-2 px-1"></i>
+                                                            </a>
+                                                        <?php } ?>
+                                                        <!-- Add to Cart Form -->
+                                                        <form method="POST" action="./addtocart.php">
+
+                                                            <input type="hidden" name="item_name" value="<?php echo $prod['product_name']; ?>">
+                                                            <input type="hidden" name="price" value="<?php echo $prod['product_price']; ?>">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input type="number" class="form-control" name="quantity" value="1" min="1">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button type="submit" name="Add_To_cart" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                                            <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                                                        </button>
+                                                    </div>
+                                                    </form>
+                                                </div>
 
                                             </div>
                                         </div>
