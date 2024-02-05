@@ -306,7 +306,7 @@ updateTable();
 
 
 
-
+    </div>
     </div>
     </div>
     <!-- Cart Page End -->
