@@ -26,10 +26,9 @@
       <div class="row g-5">
         <div class="col-lg-3 col-md-6">
           <div class="footer-item">
-            <h4 class="text-light mb-3">Why People Like us!</h4>
-            <p class="mb-4">typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the like Aldus PageMaker including of Lorem Ipsum.</p>
-            <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Read More</a>
+            <h4 class="text-light mb-3">Why us?</h4>
+            <p class="mb-4">Transform your meals into a symphony of flavours - where tradition meets taste, and every bite is a journey through generational recipes and genuine ingredients.
+            </p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
@@ -80,7 +79,7 @@
     </div>
   </div>
   <!-- Copyright End -->
-  
+
   <!-- JavaScript Libraries -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>

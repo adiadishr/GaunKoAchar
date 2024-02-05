@@ -304,7 +304,9 @@ session_start();
             <div class="row mx-auto justify-content-center ">
                 <div class="col-lg-4 col-md-6">
                     <div class="img-block mb-5">
-                        <img src="./img/antarikshya.png" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                        <div class="logo rounded-circle img-thumbnail border-5 ">
+                            <a href="https://project0rbit.com"><img src="./img/antarikshya.png" class="img-fluid" alt="image1"></a>
+                        </div>
                         <div class="content mt-2">
                             <h4>Antarikshya</h4>
                             <p class="text-muted">A startup working on tech and engineering!</p>

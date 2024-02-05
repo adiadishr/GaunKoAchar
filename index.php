@@ -386,7 +386,7 @@ session_start();
 				<h6 class="mb-3 text-primary"><i class="fas fa-user text-primary pe-2"></i> Are they available in stores?
 				</h6>
 				<p>
-					<strong>Of Course!</strong>
+					<strong>Of Course!</strong> Our pickles are available to buy in most big box stores such as Bhatbhateni, Bigmart e.t.c and through our site! You can also contact us on our social handles!
 				</p>
 			</div>
 
