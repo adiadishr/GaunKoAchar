@@ -442,14 +442,18 @@
 }
 
 @media (max-width: 992px) {
-  .owl-next, .owl-prev {
+
+  .owl-next,
+  .owl-prev {
     margin: 20px 0 10px;
   }
 
-  .vesitable .owl-prev, .vesitable .owl-next {
+  .vesitable .owl-prev,
+  .vesitable .owl-next {
     margin: 10px 0 0 !important;
   }
 }
+
 /*** vesitable End ***/
 
 
@@ -913,6 +917,10 @@
   margin-bottom: 0;
 }
 
+.last-h4 {
+  color: white;
+}
+
 @media (min-width: 768px) {
   .timeline:before {
     left: 50%;
@@ -1005,6 +1013,11 @@
   .timeline>li.timeline-inverted>.timeline-panel {
     padding: 0 100px 20px 20px;
   }
+}
+
+.company-text {
+  display: flex;
+  height: 100%;
 }
 
 /* Our Story End */

@@ -226,7 +226,7 @@ session_start();
             </div>
             <ul class="timeline">
                 <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                    <div class="timeline-image d-flex justify-content-center align-items-center"><i class="fas fa-5x fa-shoe-prints text-white fa-rotate-270"></i></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
                             <!-- <h4>2009-2011</h4> -->
@@ -239,7 +239,7 @@ session_start();
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+                    <div class="timeline-image d-flex justify-content-center align-items-center"><i class="fas fa-5x fa-stairs text-white "></i></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
                             <!-- <h4>March 2011</h4> -->
@@ -252,7 +252,7 @@ session_start();
                     </div>
                 </li>
                 <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                    <div class="timeline-image d-flex justify-content-center align-items-center"><i class="fas fa-5x fa-arrow-up-right-dots text-white "></i></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
                             <!-- <h4>December 2015</h4> -->
@@ -265,7 +265,7 @@ session_start();
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                    <div class="timeline-image d-flex justify-content-center align-items-center"><i class="far fa-5x fa-calendar text-white "></i></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
                             <!-- <h4>July 2020</h4> -->
@@ -280,7 +280,7 @@ session_start();
                 </li>
                 <li class="timeline-inverted">
                     <div class="timeline-image">
-                        <h4>
+                        <h4 class="last-h4">
                             Be Part
                             <br />
                             Of Our
@@ -301,26 +301,23 @@ session_start();
                 <h1>Meet our Team </h1>
                 <p class="text-muted">Meet and Greet our Current Managing Team!</p>
             </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
+            <div class="row mx-auto justify-content-center ">
+                <div class="col-lg-4 col-md-6">
                     <div class="img-block mb-5">
-                        <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                        <img src="./img/antarikshya.png" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
                         <div class="content mt-2">
-                            <h4>Zain Knob</h4>
-                            <p class="text-muted">Mechanical Engineer</p>
+                            <h4>Antarikshya</h4>
+                            <p class="text-muted">A startup working on tech and engineering!</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 ">
-                    <div class="img-block mb-5">
-                        <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t2.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
-                        <div class="content mt-2">
-                            <h4>Syndia Lee</h4>
-                            <p class="text-muted">Software Engineer</p>
-                        </div>
+                <div class="col-lg-4 col-md-12">
+
+                    <div class="content justify-content-center flex-column d-flex h-100 ">
+                        <h4>We're handling the digital aspects of Gaun Ko Achar, and we're enthused to promote authentic and local Nepali flavours!</h4>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <!-- <div class="col-md-6 col-lg-3">
                     <div class="img-block mb-5">
                         <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t1.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
                         <div class="content mt-2">
@@ -337,7 +334,7 @@ session_start();
                             <p class="text-muted">Street Artist</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
