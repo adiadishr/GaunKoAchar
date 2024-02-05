@@ -587,6 +587,10 @@
 
 /* Our Story Start */
 
+.story-p {
+  text-align: justify;
+}
+
 .bg-gradient-primary-to-secondary {
   background: #1e30f3;
   background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-secondary) 100%);
