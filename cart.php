@@ -169,7 +169,7 @@ include('dbconnect.php');
                                         <b><label class="form-check-label" for="flexRadioDefault1">Cash On Delivery
                                             </label></b>
                                     </div>
-                                    <button class="btn border-secondary rounded-pill px-4 py-3 text-primary text-uppercase mb-4 ms-4" name="purchase" type="button">Purchase</button>
+                                    <button class="btn border-secondary rounded-pill px-4 py-3 text-primary text-uppercase mb-4 ms-4" name="cart" type="button">Purchase</button>
                                
                                 </form>
                             </div>
