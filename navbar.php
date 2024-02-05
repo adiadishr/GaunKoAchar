@@ -3,7 +3,7 @@
 			<div class="d-flex justify-content-between">
 				<div class="top-info ps-2">
 					<small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">Kathmandu, Nepal</a></small>
-					<small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">gaunkoachar@gmail.com</a></small>
+					<small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="mailto:gaunnko@gmail.com" class="text-white">gaunnko@gmail.com</a></small>
 				</div>
 				<div class="top-link pe-2">
 					<small class="me-3"><i class="fas fa-phone-alt me-2 text-secondary"></i> <a href="#" class="text-white">+977 9843011770</a></small>

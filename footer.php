@@ -33,27 +33,25 @@
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="d-flex flex-column text-start footer-item">
-            <h4 class="text-light mb-3">Shop Info</h4>
-            <a class="btn-link" href="">About Us</a>
-            <a class="btn-link" href="">Contact Us</a>
-            <a class="btn-link" href="">Privacy Policy</a>
-            <a class="btn-link" href="">Terms & Condition</a>
-            <a class="btn-link" href="">FAQs & Help</a>
+            <h4 class="text-light mb-3">Quick Links</h4>
+            <a class="btn-link" href="index.php">Home</a>
+            <a class="btn-link" href="ourstory.php">Our Story</a>
+            <a class="btn-link" href="contact.php">Contact</a>
+            <a class="btn-link" href="index.php#faq">FAQs & Help</a>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="d-flex flex-column text-start footer-item">
             <h4 class="text-light mb-3">Account</h4>
-            <a class="btn-link" href="">My Account</a>
-            <a class="btn-link" href="">Shop details</a>
-            <a class="btn-link" href="">Shopping Cart</a>
+            <a class="btn-link" href="shop.php">Shop details</a>
+            <a class="btn-link" href="cart.php">Shopping Cart</a>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="footer-item">
             <h4 class="text-light mb-3">Contact</h4>
             <p>Address: New Baneshwor, Kathmandu 44600</p>
-            <p>Email: gaunkoachar@gmail.com</p>
+            <p>Email: gaunnko@gmail.com</p>
             <p>Phone: (+977) 9843011770</p>
           </div>
         </div>
@@ -67,12 +65,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-          <span class="text-light"><a href="/index.html"><i class="fas fa-copyright text-light me-2"></i>Gaun Ko Achar</a>, All right reserved.</span>
+          <span class="text-light"><a href="/index.php"><i class="fas fa-copyright text-light me-2"></i>Gaun Ko Achar</a>, All right reserved.</span>
         </div>
         <div class="col-md-6 my-auto text-center text-md-end text-white">
-          <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-          <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-          <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
           Designed and Maintained By <a class="border-bottom" href="https://project0rbit.com">Antarikshya</a>
         </div>
       </div>
