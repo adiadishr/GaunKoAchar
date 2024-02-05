@@ -42,7 +42,7 @@ session_start();
 	<!-- Spinner End -->
 
 	<!-- Navbar start -->
-	<div class="fixed-top">
+	<div class="fixed-top ">
 		<div class="topbar bg-primary">
 			<div class="d-flex justify-content-between">
 				<div class="top-info ps-2">
@@ -64,7 +64,7 @@ session_start();
 				</button>
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 					<div class="navbar-nav mx-auto">
-						<a href="index.php" class="nav-item nav-link active">Home</a>
+						<a href="index.php" class="nav-item nav-link">Home</a>
 						<a href="shop.php" class="nav-item nav-link">Shop</a>
 						<a href="ourstory.php" class="nav-item nav-link">Our Story</a>
 						<!-- <div class="nav-item dropdown">
@@ -101,9 +101,9 @@ session_start();
 						<a>
 							<?php if (isset($_SESSION['email'])) {
 								echo
-								'<a class="nav-link px-4">
-						<b class="hov"><i class="bi bi-person"></i>' . " " . $_SESSION['email'];
-								'</b></a>';
+								'<a class="nav-link">
+						<i class="bi bi-person"></i>' . " " . $_SESSION['email'];
+								'</a>';
 							}
 							?>
 						</a>
@@ -139,19 +139,29 @@ session_start();
 	<div class="container-fluid py-5 mb-5 hero-header">
 		<div class="container py-5">
 			<div class="row g-5 align-items-center">
-				<div class="col-md-12 col-lg-7">
-					<h4 class="mb-3 text-secondary">100% Organic Foods</h4>
-					<h1 class="mb-5 display-3 text-primary">Organic Veggies & Fruits Foods</h1>
+
+				<div class="col col-lg-6">
+					<h4 class="mb-3 text-secondary">गाउँको अचार</h4>
+					<h1 class="mb-5 display-3 text-primary">Authentic, and Handcrafted to Perfection</h1>
 					<div class="position-relative mx-auto">
-						<button type="submit" class="btn btn-primary border-2 border-secondary position-absolute rounded-pill text-white py-2 px-5">Shop Now</button>
 						<?php if (isset($_SESSION['email'])) {
-							echo '<a href="./shop.php" class="btn btn-primary border-2 border-secondary position-absolute rounded-pill text-white py-2 px-5">Shop Now</a>';
+							echo '<a href="./shop.php" class="btn btn-primary border-2 border-secondary position-absolute rounded-pill text-white py-3 px-5">Shop Now</a>';
 						} else {
-							echo '<a href="./login.php" class="btn btn-primary border-2 border-secondary position-absolute rounded-pill text-white py-2 px-5">Shop Now</a>';
+							echo '<a href="./login.php" class="btn btn-primary border-2 border-secondary position-absolute rounded-pill text-white py-3 px-5">Shop Now</a>';
 						} ?>
 					</div>
 				</div>
-				<div class="col-md-12 col-lg-5">
+				<div class="col-lg-6">
+					<div class="position-relative">
+						<img src="img/baner-1.png" class="img-fluid w-100 rounded" alt="">
+						<div class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute" style="width: 140px; height: 140px; top: 0; left: 0;">
+							<div class="d-flex flex-column">
+								<span class="h2 mb-0">Rs.500</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="col-md-12 col-lg-5">
 					<div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
 						<div class="carousel-inner" role="listbox">
 							<div class="carousel-item active rounded">
@@ -172,14 +182,14 @@ session_start();
 							<span class="visually-hidden">Next</span>
 						</button>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
 	<!-- Hero End -->
 
 
-	<!-- Featurs Section Start -->
+	<!-- Features Section Start -->
 	<div class="container-fluid featurs py-5">
 		<div class="container py-5">
 			<div class="row g-4">
@@ -211,7 +221,7 @@ session_start();
 							<i class="fas fa-leaf fa-3x text-white"></i>
 						</div>
 						<div class="featurs-content text-center">
-							<h5>100% organic  </h5>
+							<h5>100% organic </h5>
 							<p class="mb-0">No preservatives used</p>
 						</div>
 					</div>
@@ -230,7 +240,7 @@ session_start();
 			</div>
 		</div>
 	</div>
-	<!-- Featurs Section End -->
+	<!-- Features Section End -->
 
 	<!-- Vesitable Shop Start-->
 	<div class="container-fluid vesitable py-5">
@@ -359,38 +369,37 @@ session_start();
 	<div class="container-fluid banner bg-secondary my-5">
 		<div class="container py-5">
 			<div class="row g-4 align-items-center">
-				<div class="col-lg-6">
-					<div class="py-4">
-						<h1 class="display-3 text-white">Fresh Exotic Fruits</h1>
-						<p class="fw-normal display-3 text-dark mb-4">in Our Store</p>
-						<p class="mb-4 text-dark">The generated Lorem Ipsum is therefore always free from repetition
-							injected humour, or non-characteristic words etc.</p>
-						<a href="#" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">BUY</a>
-					</div>
-				</div>
+
 				<div class="col-lg-6">
 					<div class="position-relative">
 						<img src="img/baner-1.png" class="img-fluid w-100 rounded" alt="">
 						<div class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute" style="width: 140px; height: 140px; top: 0; left: 0;">
-							<h1 style="font-size: 100px;">1</h1>
 							<div class="d-flex flex-column">
-								<span class="h2 mb-0">50$</span>
-								<span class="h4 text-muted mb-0">kg</span>
+								<span class="h2 mb-0">Rs.500</span>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="col-lg-6">
+					<div class="py-4">
+						<h1 class="display-3 text-white">Tradition meets Taste!</h1>
+						<p class="fw-normal display-3 text-dark mb-4">at<span class=" fs-1 fw-bold "> गाउँको अचार</span> </p>
+						<p class="mb-4 text-dark">Enhance and transform your meals into a symphony of flavours with our authentic achar where every bite is a journey through time-honoured recipes and genuine ingredients.</p>
+						<a href="#" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">Shop Now</a>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>
 	<!-- Banner Section End -->
 
-	<!-- Tastimonial Start -->
+	<!-- Testimonial Start -->
 	<div class="container-fluid testimonial py-5">
 		<div class="container py-5">
 			<div class="testimonial-header text-center">
-				<h4 class="text-primary">Our Testimonial</h4>
-				<h1 class="display-5 mb-5 text-dark">Our Client Saying!</h1>
+				<h4 class="text-primary">Our Testimonials</h4>
+				<h1 class="display-5 mb-5 text-dark">Here's what people've said!</h1>
 			</div>
 			<div class="owl-carousel testimonial-carousel">
 				<div class="testimonial-item img-border-radius bg-light rounded p-4">
@@ -474,60 +483,48 @@ session_start();
 			</div>
 		</div>
 	</div>
-	<!-- Tastimonial End -->
+	<!-- Testimonial End -->
 
 	<!-- FAQ Section Start -->
-
 	<div class="container-xl mx-auto mb-5">
-	<h1 class="display-5 mb-3 text-primary text-center">FAQ</h1>
+		<h1 class="display-5 mb-3 text-primary text-center">FAQ</h1>
 		<p class="text-center mb-5">
 			Find the answers for the most frequently asked questions below
 		</p>
 
 		<div class="row px-5">
-			<div class="col-md-6 col-lg-4 mb-4">
-				<h6 class="mb-3 text-primary"><i class="far fa-paper-plane text-primary pe-2"></i> A simple
-					question?</h6>
-				<p>
-					<strong><u>Absolutely!</u></strong> We work with top payment companies which guarantees
-					your
-					safety and
-					security. All billing information is stored on our payment processing partner.
-				</p>
-			</div>
-
-			<div class="col-md-6 col-lg-4 mb-4">
-				<h6 class="mb-3 text-primary"><i class="fas fa-pen-alt text-primary pe-2"></i> A question
-					that
-					is longer then the previous one?</h6>
-				<p>
-					<strong><u>Yes, it is possible!</u></strong> You can cancel your subscription anytime in
-					your
-					account. Once the subscription is
-					cancelled, you will not be charged next month.
-				</p>
-			</div>
-
-			<div class="col-md-6 col-lg-4 mb-4">
-				<h6 class="mb-3 text-primary"><i class="fas fa-user text-primary pe-2"></i> A simple
-					question?
+			<div class="col-md-6 mb-4">
+				<h6 class="mb-3 text-primary"><i class="far fa-plus fw-bolder text-primary pe-2"></i>Are pickles good for your health?
 				</h6>
 				<p>
-					Currently, we only offer monthly subscription. You can upgrade or cancel your monthly
-					account at any time with no further obligation.
+					<strong><u>Absolutely!</u></strong> Pickles can be a healthy snack in moderation. They are low in calories and a source of probiotics, which can be beneficial for gut health.
 				</p>
 			</div>
 
-			<div class="col-md-6 col-lg-4 mb-4">
-				<h6 class="mb-3 text-primary"><i class="fas fa-rocket text-primary pe-2"></i> A simple
-					question?
+			<div class="col-md-6 mb-4">
+				<h6 class="mb-3 text-primary"><i class="fas fa-pen-alt text-primary pe-2"></i> So, how are they made?</h6>
+				<p>
+					<strong>Pickles are made through a process called pickling,</strong> , where vegetables are soaked in a brine solution of mustard oil and loaded full of flavour and spices!
+				</p>
+			</div>
+
+			<div class="col-md-6 mb-4">
+				<h6 class="mb-3 text-primary"><i class="fas fa-user text-primary pe-2"></i> Are they available in stores?
 				</h6>
 				<p>
-					Yes. Go to the billing section of your dashboard and update your payment information.
+					<strong>Of Course!</strong>
 				</p>
 			</div>
 
-			<div class="col-md-6 col-lg-4 mb-4">
+			<div class="col-md-6 mb-4">
+				<h6 class="mb-3 text-primary"><i class="fas fa-rocket text-primary pe-2"></i> Any added preservatives / chemicals?
+				</h6>
+				<p>
+					<strong>Not at all!</strong> Our commitment to authenticity and traditional methods means that we take pride in offering preservative-free pickles.
+				</p>
+			</div>
+
+			<!-- <div class="col-md-6 col-lg-4 mb-4">
 				<h6 class="mb-3 text-primary"><i class="fas fa-home text-primary pe-2"></i> A simple
 					question?
 				</h6>
@@ -541,10 +538,9 @@ session_start();
 				<p>
 					Of course! We’re happy to offer a free plan to anyone who wants to try our service.
 				</p>
-			</div>
+			</div> -->
 		</div>
 	</div>
-
 	<!-- FAQ Section End -->
 
 	<?php

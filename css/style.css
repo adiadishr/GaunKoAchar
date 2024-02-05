@@ -441,12 +441,22 @@
   color: var(--bs-white);
 }
 
+@media (max-width: 992px) {
+  .owl-next, .owl-prev {
+    margin: 20px 0 10px;
+  }
+
+  .vesitable .owl-prev, .vesitable .owl-next {
+    margin: 10px 0 0 !important;
+  }
+}
 /*** vesitable End ***/
 
 
 /*** Banner Section Start ***/
 .banner .banner-btn:hover {
-  background: var(--bs-primary);
+  background: var(--bs-white) !important;
+  color: var(--bs-primary) !important;
 }
 
 /*** Banner Section End ***/
