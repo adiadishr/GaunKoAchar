@@ -114,7 +114,6 @@ session_start();
 	</div>
 	<!-- Navbar End -->
 
-
 	<!-- Modal Search Start -->
 	<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-fullscreen">
@@ -133,7 +132,6 @@ session_start();
 		</div>
 	</div>
 	<!-- Modal Search End -->
-
 
 	<!-- Hero Start -->
 	<div class="container-fluid py-5 mb-5 hero-header">
