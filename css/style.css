@@ -457,7 +457,6 @@
 .banner .banner-btn:hover {
   background: var(--bs-white) !important;
   color: var(--bs-primary) !important;
-  transform: translate(0,-5%);
 }
 
 /*** Banner Section End ***/
