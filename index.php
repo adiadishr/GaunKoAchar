@@ -7,7 +7,7 @@ session_start();
 <head>
 	<meta charset="utf-8">
 	<title>Gaun Ko Achar</title>
-	<link rel="shortcut icon" href="/img/gaunkoachar.png" type="image/x-icon">
+	<link rel="shortcut icon" href="./img/gaunkoachar.png" type="image/x-icon">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta content="" name="keywords">
 	<meta content="" name="description">
@@ -188,7 +188,6 @@ session_start();
 	</div>
 	<!-- Hero End -->
 
-
 	<!-- Features Section Start -->
 	<div class="container-fluid featurs py-5">
 		<div class="container py-5">
@@ -241,158 +240,6 @@ session_start();
 		</div>
 	</div>
 	<!-- Features Section End -->
-
-	<!-- Vesitable Shop Start-->
-	<div class="container-fluid vesitable py-5">
-		<div class="container py-5">
-			<h1 class="mb-0">Fresh Organic Vegetables</h1>
-			<div class="owl-carousel vegetable-carousel justify-content-center">
-				<div class="border border-primary rounded position-relative vesitable-item">
-					<div class="vesitable-img">
-						<img src="img/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
-					</div>
-					<div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
-					<div class="p-4 rounded-bottom">
-						<h4>Parsely</h4>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-						<div class="d-flex justify-content-between flex-lg-wrap">
-							<p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-						</div>
-					</div>
-				</div>
-				<div class="border border-primary rounded position-relative vesitable-item">
-					<div class="vesitable-img">
-						<img src="img/vegetable-item-1.jpg" class="img-fluid w-100 rounded-top" alt="">
-					</div>
-					<div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
-					<div class="p-4 rounded-bottom">
-						<h4>Parsely</h4>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-						<div class="d-flex justify-content-between flex-lg-wrap">
-							<p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-						</div>
-					</div>
-				</div>
-				<div class="border border-primary rounded position-relative vesitable-item">
-					<div class="vesitable-img">
-						<img src="img/vegetable-item-3.png" class="img-fluid w-100 rounded-top bg-light" alt="">
-					</div>
-					<div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
-					<div class="p-4 rounded-bottom">
-						<h4>Banana</h4>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-						<div class="d-flex justify-content-between flex-lg-wrap">
-							<p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-						</div>
-					</div>
-				</div>
-				<div class="border border-primary rounded position-relative vesitable-item">
-					<div class="vesitable-img">
-						<img src="img/vegetable-item-4.jpg" class="img-fluid w-100 rounded-top" alt="">
-					</div>
-					<div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
-					<div class="p-4 rounded-bottom">
-						<h4>Bell Papper</h4>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-						<div class="d-flex justify-content-between flex-lg-wrap">
-							<p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-						</div>
-					</div>
-				</div>
-				<div class="border border-primary rounded position-relative vesitable-item">
-					<div class="vesitable-img">
-						<img src="img/vegetable-item-5.jpg" class="img-fluid w-100 rounded-top" alt="">
-					</div>
-					<div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
-					<div class="p-4 rounded-bottom">
-						<h4>Potatoes</h4>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-						<div class="d-flex justify-content-between flex-lg-wrap">
-							<p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-						</div>
-					</div>
-				</div>
-				<div class="border border-primary rounded position-relative vesitable-item">
-					<div class="vesitable-img">
-						<img src="img/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
-					</div>
-					<div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
-					<div class="p-4 rounded-bottom">
-						<h4>Parsely</h4>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-						<div class="d-flex justify-content-between flex-lg-wrap">
-							<p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-						</div>
-					</div>
-				</div>
-				<div class="border border-primary rounded position-relative vesitable-item">
-					<div class="vesitable-img">
-						<img src="img/vegetable-item-5.jpg" class="img-fluid w-100 rounded-top" alt="">
-					</div>
-					<div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
-					<div class="p-4 rounded-bottom">
-						<h4>Potatoes</h4>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-						<div class="d-flex justify-content-between flex-lg-wrap">
-							<p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-						</div>
-					</div>
-				</div>
-				<div class="border border-primary rounded position-relative vesitable-item">
-					<div class="vesitable-img">
-						<img src="img/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
-					</div>
-					<div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
-					<div class="p-4 rounded-bottom">
-						<h4>Parsely</h4>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-						<div class="d-flex justify-content-between flex-lg-wrap">
-							<p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-							<a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Vesitable Shop End -->
-
-
-	<!-- Banner Section Start-->
-	<div class="container-fluid banner bg-secondary my-5">
-		<div class="container py-5">
-			<div class="row g-4 align-items-center">
-
-				<div class="col-lg-6">
-					<div class="position-relative">
-						<img src="img/baner-1.png" class="img-fluid w-100 rounded" alt="">
-						<div class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute" style="width: 140px; height: 140px; top: 0; left: 0;">
-							<div class="d-flex flex-column">
-								<span class="h2 mb-0">Rs.500</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="py-4">
-						<h1 class="display-3 text-white">Tradition meets Taste!</h1>
-						<p class="fw-normal display-3 text-dark mb-4">at<span class=" fs-1 fw-bold "> गाउँको अचार</span> </p>
-						<p class="mb-4 text-dark">Enhance and transform your meals into a symphony of flavours with our authentic achar where every bite is a journey through time-honoured recipes and genuine ingredients.</p>
-						<a href="#" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">Shop Now</a>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-	<!-- Banner Section End -->
 
 	<!-- Testimonial Start -->
 	<div class="container-fluid testimonial py-5">
@@ -484,6 +331,35 @@ session_start();
 		</div>
 	</div>
 	<!-- Testimonial End -->
+
+	<!-- Banner Section Start-->
+	<div class="container-fluid banner bg-secondary my-5">
+		<div class="container py-5">
+			<div class="row g-4 align-items-center">
+
+				<div class="col-lg-6">
+					<div class="position-relative">
+						<img src="img/baner-1.png" class="img-fluid w-100 rounded" alt="">
+						<div class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute" style="width: 140px; height: 140px; top: 0; left: 0;">
+							<div class="d-flex flex-column">
+								<span class="h2 mb-0">Rs.500</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="py-4">
+						<h1 class="display-3 text-white">Tradition meets Taste!</h1>
+						<p class="fw-normal display-3 text-dark mb-4">at<span class=" fs-1 fw-bold "> गाउँको अचार</span> </p>
+						<p class="mb-4 text-dark">Enhance and transform your meals into a symphony of flavours with our authentic achar where every bite is a journey through time-honoured recipes and genuine ingredients.</p>
+						<a href="#" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">Shop Now</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- Banner Section End -->
 
 	<!-- FAQ Section Start -->
 	<div class="container-xl mx-auto mb-5">
