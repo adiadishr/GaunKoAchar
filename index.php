@@ -251,43 +251,16 @@ session_start();
 					<div class="position-relative">
 						<i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
 						<div class="mb-4 pb-4 border-bottom border-secondary">
-							<p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the
-								industry's standard dummy text ever since the 1500s,
+							<p class="mb-0"><i>Gaun ko achar mero daily khane kura ma bhaisakyo. Aba gaun ko achar bina harek meal nai adhuro lagxa.</i>
 							</p>
 						</div>
 						<div class="d-flex align-items-center flex-nowrap">
 							<div class="bg-secondary rounded">
-								<img src="img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+								<img src="img/saurav.png" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
 							</div>
 							<div class="ms-4 d-block">
-								<h4 class="text-dark">Client Name</h4>
-								<p class="m-0 pb-3">Profession</p>
-								<div class="d-flex pe-5">
-									<i class="fas fa-star text-primary"></i>
-									<i class="fas fa-star text-primary"></i>
-									<i class="fas fa-star text-primary"></i>
-									<i class="fas fa-star text-primary"></i>
-									<i class="fas fa-star"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="testimonial-item img-border-radius bg-light rounded p-4">
-					<div class="position-relative">
-						<i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
-						<div class="mb-4 pb-4 border-bottom border-secondary">
-							<p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the
-								industry's standard dummy text ever since the 1500s,
-							</p>
-						</div>
-						<div class="d-flex align-items-center flex-nowrap">
-							<div class="bg-secondary rounded">
-								<img src="img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
-							</div>
-							<div class="ms-4 d-block">
-								<h4 class="text-dark">Client Name</h4>
-								<p class="m-0 pb-3">Profession</p>
+								<h4 class="text-dark">Sujay Manandhar</h4>
+								<p class="m-0 pb-3">Event Manager</p>
 								<div class="d-flex pe-5">
 									<i class="fas fa-star text-primary"></i>
 									<i class="fas fa-star text-primary"></i>
@@ -303,17 +276,16 @@ session_start();
 					<div class="position-relative">
 						<i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
 						<div class="mb-4 pb-4 border-bottom border-secondary">
-							<p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the
-								industry's standard dummy text ever since the 1500s,
+							<p class="mb-0"><i>I've simply come to love gaun ko achar, and find that I've been feeling healthier as well! I highly recommend it!</i>
 							</p>
 						</div>
 						<div class="d-flex align-items-center flex-nowrap">
 							<div class="bg-secondary rounded">
-								<img src="img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+								<img src="img/himanshi.png" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
 							</div>
 							<div class="ms-4 d-block">
-								<h4 class="text-dark">Client Name</h4>
-								<p class="m-0 pb-3">Profession</p>
+								<h4 class="text-dark">Pragati Dhungana</h4>
+								<p class="m-0 pb-3">Teacher</p>
 								<div class="d-flex pe-5">
 									<i class="fas fa-star text-primary"></i>
 									<i class="fas fa-star text-primary"></i>
