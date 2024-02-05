@@ -36,9 +36,7 @@
 						<a href="cart.php" class="nav-item nav-link">Checkout</a>
 					</div>
 					<div class="d-flex p-3 me-0">
-					<form class="d-flex" role="search" action="search.php" method="POST">
 						<button class="btn-search btn btn-md-square rounded-circle me-4" type="submit" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-2x fa-search text-primary"></i></button>
-						</form>
 						<a href="cart.php" class="position-relative me-4 my-auto">
 							<i class="fa fa-shopping-bag fa-2x"></i>
 							<span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
@@ -71,6 +69,7 @@
 		</div>
 	</div>
 	  <!-- Modal Search Start -->
+	  
 	  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content rounded-0">
@@ -79,12 +78,18 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body d-flex align-items-center">
+				<form class="d-flex col-12" role="search" action="search.php" method="POST">
                     <div class="input-group w-75 mx-auto d-flex">
                         <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        <button type="submit" id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></button>
                     </div>
+						</form>
                 </div>
+
             </div>
         </div>
     </div>
-    <!-- Modal Search End -->
+    <!-- Modal Search End --><form class="d-flex" role="search" action="search.php" method="POST">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>

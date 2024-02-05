@@ -1,11 +1,6 @@
 <?php
-    include "navbar.php";
     include "dbconnect.php";
  ?>
-<!doctype html>
-<html lang="en">
-
-<body>
     <?php 
     if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['search'])) {
     $searchTerm = $_POST['search'];
@@ -46,9 +41,3 @@
         }
     }
     ?>
-
-
-<?php include "footer.php"?>
-</body>
-
-</html>
