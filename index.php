@@ -50,7 +50,7 @@ session_start();
 					<small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="mailto:gaunnko@gmail.com" class="text-white">gaunnko@gmail.com</a></small>
 				</div>
 				<div class="top-link pe-2">
-					<small class="me-3"><i class="fas fa-phone-alt me-2 text-secondary"></i> <a href="#" class="text-white">+977 9843011770</a></small>
+					<small class="me-3"><i class="fas fa-phone-alt me-2 text-secondary"></i> <a href="#" class="text-white">+977 9808284192</a></small>
 				</div>
 			</div>
 		</div>

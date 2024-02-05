@@ -52,7 +52,7 @@
             <h4 class="text-light mb-3">Contact</h4>
             <p>Address: New Baneshwor, Kathmandu 44600</p>
             <p>Email: gaunnko@gmail.com</p>
-            <p>Phone: (+977) 9843011770</p>
+            <p>Phone: (+977) 9808284192</p>
           </div>
         </div>
       </div>

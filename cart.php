@@ -269,14 +269,14 @@ function updateTable() {
                                 <td>Rs. " + value['price'] + "<input type='hidden' class='iprice' value='" + value['price'] + "'></td>\
                                 <td>\
                                     <form action='cart.php' method='POST'>\
-                                        <input class='iquantity' name='quantity' id='quantity" + sr + "' onchange='updateQuantity(" + sr + ");' type='number' value='" + value['quantity'] + "' min='1'>\
+                                        <input class='iquantity' style='width:75px' name='quantity' id='quantity" + sr + "' onchange='updateQuantity(" + sr + ");' type='number' value='" + value['quantity'] + "' min='1'>\
                                         <input type='hidden' name='item_name' value='" + value['item_name'] + "'>\
                                     </form>\
                                 </td>\
                                 <td class='itotal'>Rs. " + (parseFloat(value['price']) * parseInt(value['quantity'])).toFixed(2) + "</td>\
                                 <td>\
                                     <form action='cart.php' method='POST'>\
-                                        <button name='Remove_Item' class='bbtn btn-md rounded-circle bg-light border mt-4' onclick='removeItem(" + sr + ");'><i class='fa fa-times text-danger'></i></button>\
+                                        <button name='Remove_Item' class='bbtn btn-md rounded-circle bg-light border ' onclick='removeItem(" + sr + ");'><i class='fa fa-times text-danger'></i></button>\
                                         <input type='hidden' name='item_name' value='" + value['item_name'] + "'>\
                                     </form>\
                                 </td>\
