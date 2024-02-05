@@ -130,8 +130,7 @@ $pdetails = mysqli_query($conn, "SELECT * FROM products where product_id = '$pro
     <input type="hidden" name="price" value="<?php echo $product['product_price']; ?>">
     <input type="number" name="quantity" value="1" min="1">
     <button type="submit" name="Add_To_cart" class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary">
-        <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
-    </button>
+        <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</button>
 </form>
 
     </div>
