@@ -150,7 +150,7 @@ $products = mysqli_query($conn, "SELECT * FROM products");
                                                         <input type="hidden" name="item_name" value="<?php echo $prod['product_name']; ?>">
                                                         <input type="hidden" name="price" value="<?php echo $prod['product_price']; ?>">
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-7 d-flex justify-content-end">
                                                     <button type="submit" name="Add_To_cart" class="btn border border-secondary rounded-pill px-3 text-primary">
                                                         <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
                                                     </button>
