@@ -139,19 +139,19 @@ session_start();
 	<div class="container-fluid py-5 mb-5 hero-header">
 		<div class="container py-5">
 			<div class="row g-5 align-items-center">
-				<div class="col-md-12 col-lg-7">
-					<h4 class="mb-3 text-secondary">100% Organic Foods</h4>
-					<h1 class="mb-5 display-3 text-primary">Organic Veggies & Fruits Foods</h1>
+
+				<div class="col col-lg-7">
+					<h4 class="mb-3 text-secondary">गाउँको अचार</h4>
+					<h1 class="mb-5 display-3 text-primary">Authentic, and Handcrafted to Perfection</h1>
 					<div class="position-relative mx-auto">
-						<button type="submit" class="btn btn-primary border-2 border-secondary position-absolute rounded-pill text-white py-2 px-5">Shop Now</button>
 						<?php if (isset($_SESSION['email'])) {
-							echo '<a href="./shop.php" class="btn btn-primary border-2 border-secondary position-absolute rounded-pill text-white py-2 px-5">Shop Now</a>';
+							echo '<a href="./shop.php" class="btn btn-primary border-2 border-secondary position-absolute rounded-pill text-white py-3 px-5">Shop Now</a>';
 						} else {
-							echo '<a href="./login.php" class="btn btn-primary border-2 border-secondary position-absolute rounded-pill text-white py-2 px-5">Shop Now</a>';
+							echo '<a href="./login.php" class="btn btn-primary border-2 border-secondary position-absolute rounded-pill text-white py-3 px-5">Shop Now</a>';
 						} ?>
 					</div>
 				</div>
-				<div class="col-md-12 col-lg-5">
+				<!-- <div class="col-md-12 col-lg-5">
 					<div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
 						<div class="carousel-inner" role="listbox">
 							<div class="carousel-item active rounded">
@@ -172,7 +172,7 @@ session_start();
 							<span class="visually-hidden">Next</span>
 						</button>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
@@ -211,7 +211,7 @@ session_start();
 							<i class="fas fa-leaf fa-3x text-white"></i>
 						</div>
 						<div class="featurs-content text-center">
-							<h5>100% organic  </h5>
+							<h5>100% organic </h5>
 							<p class="mb-0">No preservatives used</p>
 						</div>
 					</div>
@@ -365,7 +365,7 @@ session_start();
 						<p class="fw-normal display-3 text-dark mb-4">in Our Store</p>
 						<p class="mb-4 text-dark">The generated Lorem Ipsum is therefore always free from repetition
 							injected humour, or non-characteristic words etc.</p>
-						<a href="#" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">BUY</a>
+						<a href="#" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">Shop Now</a>
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -479,55 +479,44 @@ session_start();
 	<!-- FAQ Section Start -->
 
 	<div class="container-xl mx-auto mb-5">
-	<h1 class="display-5 mb-3 text-primary text-center">FAQ</h1>
+		<h1 class="display-5 mb-3 text-primary text-center">FAQ</h1>
 		<p class="text-center mb-5">
 			Find the answers for the most frequently asked questions below
 		</p>
 
 		<div class="row px-5">
-			<div class="col-md-6 col-lg-4 mb-4">
-				<h6 class="mb-3 text-primary"><i class="far fa-paper-plane text-primary pe-2"></i> A simple
-					question?</h6>
-				<p>
-					<strong><u>Absolutely!</u></strong> We work with top payment companies which guarantees
-					your
-					safety and
-					security. All billing information is stored on our payment processing partner.
-				</p>
-			</div>
-
-			<div class="col-md-6 col-lg-4 mb-4">
-				<h6 class="mb-3 text-primary"><i class="fas fa-pen-alt text-primary pe-2"></i> A question
-					that
-					is longer then the previous one?</h6>
-				<p>
-					<strong><u>Yes, it is possible!</u></strong> You can cancel your subscription anytime in
-					your
-					account. Once the subscription is
-					cancelled, you will not be charged next month.
-				</p>
-			</div>
-
-			<div class="col-md-6 col-lg-4 mb-4">
-				<h6 class="mb-3 text-primary"><i class="fas fa-user text-primary pe-2"></i> A simple
-					question?
+			<div class="col-md-6 mb-4">
+				<h6 class="mb-3 text-primary"><i class="far fa-plus fw-bolder text-primary pe-2"></i>Are pickles good for your health?
 				</h6>
 				<p>
-					Currently, we only offer monthly subscription. You can upgrade or cancel your monthly
-					account at any time with no further obligation.
+					<strong><u>Absolutely!</u></strong> Pickles can be a healthy snack in moderation. They are low in calories and a source of probiotics, which can be beneficial for gut health.
 				</p>
 			</div>
 
-			<div class="col-md-6 col-lg-4 mb-4">
-				<h6 class="mb-3 text-primary"><i class="fas fa-rocket text-primary pe-2"></i> A simple
-					question?
+			<div class="col-md-6 mb-4">
+				<h6 class="mb-3 text-primary"><i class="fas fa-pen-alt text-primary pe-2"></i> So, how are they made?</h6>
+				<p>
+					<strong>Pickles are made through a process called pickling,</strong> , where vegetables are soaked in a brine solution of mustard oil and loaded full of flavour and spices!
+				</p>
+			</div>
+
+			<div class="col-md-6 mb-4">
+				<h6 class="mb-3 text-primary"><i class="fas fa-user text-primary pe-2"></i> Are they available in stores?
 				</h6>
 				<p>
-					Yes. Go to the billing section of your dashboard and update your payment information.
+					<strong>Of Course!</strong>
 				</p>
 			</div>
 
-			<div class="col-md-6 col-lg-4 mb-4">
+			<div class="col-md-6 mb-4">
+				<h6 class="mb-3 text-primary"><i class="fas fa-rocket text-primary pe-2"></i> Any added preservatives / chemicals?
+				</h6>
+				<p>
+					<strong>Not at all!</strong> Our commitment to authenticity and traditional methods means that we take pride in offering preservative-free pickles.
+				</p>
+			</div>
+
+			<!-- <div class="col-md-6 col-lg-4 mb-4">
 				<h6 class="mb-3 text-primary"><i class="fas fa-home text-primary pe-2"></i> A simple
 					question?
 				</h6>
@@ -541,7 +530,7 @@ session_start();
 				<p>
 					Of course! We’re happy to offer a free plan to anyone who wants to try our service.
 				</p>
-			</div>
+			</div> -->
 		</div>
 	</div>
 
