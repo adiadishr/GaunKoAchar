@@ -7,7 +7,7 @@ session_start();
 <head>
     <meta charset="utf-8">
     <title>Our Story</title>
-    <link rel="shortcut icon" href="/img/gaunkoachar.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/gaunkoachar.png" type="image/x-icon">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -207,10 +207,10 @@ session_start();
                 <div class="col-12 col-lg-6 col-xl-7">
                     <div class="row justify-content-xl-center">
                         <div class="col-12 col-xl-11">
-                            <h2 class="mb-3 text-md-center ">Who Are We?</h2>
-                            <p class="lead fs-4 text-secondary mb-3">It all started with her!
+                            <h2 class="mb-3 text-center">Who Are We?</h2>
+                            <p class="lead fs-4 text-secondary mb-3 text-center ">It all started with her!
                             </p>
-                            <p class="mb-5">Srijana Aryal is an exemplary and inspirational woman who epitomizes resilience and determination in the face of adversity. As a single parent, she encountered financial crisis following the untimely demise of her husband. Despite the immense struggles she faced, Srijana refused to succumb to despair and demonstrated unwavering determination to create a better life for herself and her family.</p>
+                            <p class="mb-5 story-p">Srijana Aryal is an exemplary and inspirational woman who epitomizes resilience and determination in the face of adversity. As a single parent, she encountered financial crisis following the untimely demise of her husband. Despite the immense struggles she faced, Srijana refused to succumb to despair and demonstrated unwavering determination to create a better life for herself and her family.</p>
                         </div>
                     </div>
                 </div>
@@ -297,14 +297,16 @@ session_start();
     <!-- Team Section Start -->
     <section class="team text-center py-5">
         <div class="container">
-            <div class="header my-5">
+            <div class="header my-5 pb-3">
                 <h1>Meet our Team </h1>
                 <p class="text-muted">Meet and Greet our Current Managing Team!</p>
             </div>
             <div class="row mx-auto justify-content-center ">
                 <div class="col-lg-4 col-md-6">
                     <div class="img-block mb-5">
-                        <img src="./img/antarikshya.png" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                        <div class="logo rounded-circle img-thumbnail border-5 mb-5 ">
+                            <a href="https://project0rbit.com"><img src="./img/antarikshya.png" class="img-fluid" alt="image1"></a>
+                        </div>
                         <div class="content mt-2">
                             <h4>Antarikshya</h4>
                             <p class="text-muted">A startup working on tech and engineering!</p>

@@ -47,10 +47,10 @@ session_start();
 			<div class="d-flex justify-content-between">
 				<div class="top-info ps-2">
 					<small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">Kathmandu, Nepal</a></small>
-					<small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">gaunkoachar@gmail.com</a></small>
+					<small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="mailto:gaunnko@gmail.com" class="text-white">gaunnko@gmail.com</a></small>
 				</div>
 				<div class="top-link pe-2">
-					<small class="me-3"><i class="fas fa-phone-alt me-2 text-secondary"></i> <a href="#" class="text-white">+977 9843011770</a></small>
+					<small class="me-3"><i class="fas fa-phone-alt me-2 text-secondary"></i> <a href="#" class="text-white">+977 9808284192</a></small>
 				</div>
 			</div>
 		</div>
@@ -83,7 +83,7 @@ session_start();
 						<button class="btn-search btn btn-md-square rounded-circle me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-2x fa-search text-primary"></i></button>
 						<a href="cart.php" class="position-relative me-4 my-auto">
 							<i class="fa fa-shopping-bag fa-2x"></i>
-							<span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
+							<!-- <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span> -->
 						</a>
 						<?php
 						if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
@@ -251,43 +251,16 @@ session_start();
 					<div class="position-relative">
 						<i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
 						<div class="mb-4 pb-4 border-bottom border-secondary">
-							<p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the
-								industry's standard dummy text ever since the 1500s,
+							<p class="mb-0"><i>Gaun ko achar mero daily khane kura ma bhaisakyo. Aba gaun ko achar bina harek meal nai adhuro lagxa.</i>
 							</p>
 						</div>
 						<div class="d-flex align-items-center flex-nowrap">
 							<div class="bg-secondary rounded">
-								<img src="img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+								<img src="img/saurav.png" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
 							</div>
 							<div class="ms-4 d-block">
-								<h4 class="text-dark">Client Name</h4>
-								<p class="m-0 pb-3">Profession</p>
-								<div class="d-flex pe-5">
-									<i class="fas fa-star text-primary"></i>
-									<i class="fas fa-star text-primary"></i>
-									<i class="fas fa-star text-primary"></i>
-									<i class="fas fa-star text-primary"></i>
-									<i class="fas fa-star"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="testimonial-item img-border-radius bg-light rounded p-4">
-					<div class="position-relative">
-						<i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
-						<div class="mb-4 pb-4 border-bottom border-secondary">
-							<p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the
-								industry's standard dummy text ever since the 1500s,
-							</p>
-						</div>
-						<div class="d-flex align-items-center flex-nowrap">
-							<div class="bg-secondary rounded">
-								<img src="img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
-							</div>
-							<div class="ms-4 d-block">
-								<h4 class="text-dark">Client Name</h4>
-								<p class="m-0 pb-3">Profession</p>
+								<h4 class="text-dark">Sujay Manandhar</h4>
+								<p class="m-0 pb-3">Event Manager</p>
 								<div class="d-flex pe-5">
 									<i class="fas fa-star text-primary"></i>
 									<i class="fas fa-star text-primary"></i>
@@ -303,17 +276,16 @@ session_start();
 					<div class="position-relative">
 						<i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
 						<div class="mb-4 pb-4 border-bottom border-secondary">
-							<p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the
-								industry's standard dummy text ever since the 1500s,
+							<p class="mb-0"><i>I've simply come to love gaun ko achar, and find that I've been feeling healthier as well! I highly recommend it!</i>
 							</p>
 						</div>
 						<div class="d-flex align-items-center flex-nowrap">
 							<div class="bg-secondary rounded">
-								<img src="img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+								<img src="img/himanshi.png" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
 							</div>
 							<div class="ms-4 d-block">
-								<h4 class="text-dark">Client Name</h4>
-								<p class="m-0 pb-3">Profession</p>
+								<h4 class="text-dark">Pragati Dhungana</h4>
+								<p class="m-0 pb-3">Teacher</p>
 								<div class="d-flex pe-5">
 									<i class="fas fa-star text-primary"></i>
 									<i class="fas fa-star text-primary"></i>
@@ -350,7 +322,7 @@ session_start();
 						<h1 class="display-3 text-white">Tradition meets Taste!</h1>
 						<p class="fw-normal display-3 text-dark mb-4">at<span class=" fs-1 fw-bold "> गाउँको अचार</span> </p>
 						<p class="mb-4 text-dark">Enhance and transform your meals into a symphony of flavours with our authentic achar where every bite is a journey through time-honoured recipes and genuine ingredients.</p>
-						<a href="#" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">Shop Now</a>
+						<a href="#" id="faq" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">Shop Now</a>
 					</div>
 				</div>
 
@@ -386,7 +358,7 @@ session_start();
 				<h6 class="mb-3 text-primary"><i class="fas fa-user text-primary pe-2"></i> Are they available in stores?
 				</h6>
 				<p>
-					<strong>Of Course!</strong>
+					<strong>Of Course!</strong> Our pickles are available to buy in most big box stores such as Bhatbhateni, Bigmart e.t.c and through our site! You can also contact us on our social handles!
 				</p>
 			</div>
 

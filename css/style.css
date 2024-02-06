@@ -587,6 +587,10 @@
 
 /* Our Story Start */
 
+.story-p {
+  text-align: justify;
+}
+
 .bg-gradient-primary-to-secondary {
   background: #1e30f3;
   background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-secondary) 100%);
@@ -1018,6 +1022,26 @@
 .company-text {
   display: flex;
   height: 100%;
+}
+
+.team .logo {
+  overflow: hidden;
+  transition: 0.5s;
+  /* width: 300px;
+  height: auto; */
+}
+
+.team .logo:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+}
+
+.team .logo img {
+  transition: 0.5s;
+  transform: scale(.8);
+}
+
+.team .logo img:hover {
+  transform: scale(.9);
 }
 
 /* Our Story End */

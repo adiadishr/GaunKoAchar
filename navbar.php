@@ -3,10 +3,10 @@
 			<div class="d-flex justify-content-between">
 				<div class="top-info ps-2">
 					<small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">Kathmandu, Nepal</a></small>
-					<small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">gaunkoachar@gmail.com</a></small>
+					<small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="mailto:gaunnko@gmail.com" class="text-white">gaunnko@gmail.com</a></small>
 				</div>
 				<div class="top-link pe-2">
-					<small class="me-3"><i class="fas fa-phone-alt me-2 text-secondary"></i> <a href="#" class="text-white">+977 9843011770</a></small>
+					<small class="me-3"><i class="fas fa-phone-alt me-2 text-secondary"></i> <a href="#" class="text-white">+977 9808284192</a></small>
 				</div>
 			</div>
 		</div>
@@ -39,7 +39,7 @@
 						<button class="btn-search btn btn-md-square rounded-circle me-4" type="submit" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-2x fa-search text-primary"></i></button>
 						<a href="myorder.php" class="position-relative me-4 my-auto">
 							<i class="fa fa-shopping-bag fa-2x"></i>
-							<span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
+							<!-- <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span> -->
 						</a>
 						<?php
 						if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
