@@ -96,6 +96,10 @@
                                             <input type="password"  name = "password" id="password" class="form-control mb-2"
                                                 placeholder="Enter your password please" />
                                         </div>
+                                        
+                                        <div class="text-center pt-1 mb-1 pb-1">
+                                        <p><a href="forgot_password.php">Forgot Password?</a></p>
+                                    </div>
 
                                         <div class="text-center pt-1 mb-1 pb-1">
                                            <button class="btn btn-primary btn-block fa-lg me-3 mb-3 w-100 " type="login" name = "login" >Login</button>

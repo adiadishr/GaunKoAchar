@@ -57,43 +57,42 @@ include '../dbconnect.php';
                 <h2>All Products</h2>
 
                 <table class="table table-bordered table-hover mb-2">
-                    <tr>
-                        <th colspan="8"><a href="add-product.php">Add New Product</a></th>
-                    </tr>
-                    <tr class=" success">
-                        <th>S.No</th>
-                        <th>Name</th>
-                        <th>Photo</th>
-                        <th>Description</th>
-                        <th>Price</th>
-                        <th>Stock</th>
-                        <th>Delete</th>
-                        <th>Update</th>
-                    </tr>
-                    <?php
+    <tr>
+        <th colspan="8"><a href="add-product.php">Add New Product</a></th>
+    </tr>
+    <tr class="success">
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Photo</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Delete</th>
+        <th>Update</th>
+    </tr>
 
-                    $i = 1;
-                    while ($row = mysqli_fetch_assoc($q)) {
-                        echo "<tr>";
-                        echo "<td>" . $i . "</td>";
-                        echo "<td>" . $row['product_name'] . "</td>";
-                    ?>
-                        <td class="w-25 "><img class="img-fluid w-75" src="../uploads/<?php echo $row['product_image']; ?>" alt="" />
-                            <?php
-                            echo "<td>" . $row['product_description'] . "</td>";
-                            echo "<td>" . $row['product_price'] . "</td>";
-                            echo "<td>" . $row['product_stock'] . "</td>";
-                            ?>
-                        <td><a href="javascript:DeleteProducts('<?php echo $row['product_id']; ?>')" class="btn btn-danger">Delete</a></td>
+    <?php
+    $i = 1;
+    while ($row = mysqli_fetch_assoc($q)) {
+        echo "<tr>";
+        echo "<td>" . $i . "</td>";
+        echo "<td>" . $row['product_name'] . "</td>";
 
-                    <?php
-                        echo "<td><a href='updateProd.php?page=updateProd&product_id=" . $row['product_id'] . "' class='btn btn-secondary'>Update</a></td>";
-                        echo "</tr>";
-                        $i++;
-                    }
-                    ?>
+        // Display product image
+        echo "<td><img class='img-fluid w-75' src='../uploads/" . $row['product_image'] . "' alt='' /></td>";
 
-                </table>
+        echo "<td>" . $row['product_description'] . "</td>";
+        echo "<td>" . $row['product_price'] . "</td>";
+        echo "<td>" . $row['product_stock'] . "</td>";
+    ?>
+        <td><a href="javascript:DeleteProducts('<?php echo $row['product_id']; ?>')" class="btn btn-danger">Delete</a></td>
+        <?php
+        echo "<td><a href='updateProd.php?page=updateProd&product_id=" . $row['product_id'] . "' class='btn btn-secondary'>Update</a></td>";
+        echo "</tr>";
+        $i++;
+    }
+    ?>
+</table>
             <?php } ?>
         </section>
     </div>

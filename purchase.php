@@ -15,26 +15,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (isset($_SESSION['cart'])) {
         $oid = rand(1, 100);
-        $query1 = "INSERT INTO orders(item_name, price, quantity, order_id, orderedby, address , phone_no, payment_mode) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+        $query1 = "INSERT INTO orders(item_name, price, quantity, order_id, orderedby, address, phone_no, payment_mode) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
         $stmt = mysqli_prepare($conn, $query1);
 
         foreach ($_SESSION['cart'] as $value) {
-            $item_name = $value['item_name'];
+            $item_name = $value['Item_name'];
             $price = $value['price'];
-            $quantity = $value['quantity'];
-            mysqli_stmt_bind_param($stmt, 'ssiissis', $item_name, $price, $quantity, $oid, $_POST['first_name'], $_POST['address'], $_POST['phone'], $_POST['payment_mode']);
+            $quantity = $value['Quantity'];
+            mysqli_stmt_bind_param($stmt, 'ssiissis', $item_name, $price, $quantity, $oid, $_POST['fname'], $_POST['address'], $_POST['phone_no'], $_POST['pay_mode']);
             mysqli_stmt_execute($stmt);
             $total += $price * $quantity;
         }
 
         unset($_SESSION['cart']);
 
-        echo "<script>alert('Order Placed'); 
-        window.location.href='./index.php';</script>";
+        echo "<script>alert('Order Placed'); window.location.href='./index.php';</script>";
     } else {
         echo "<script>
     alert('Cart is empty.');
-    window.location.href='./cart.php';
+    window.location.href='./mycart.php';
     </script>";
     }
 }
