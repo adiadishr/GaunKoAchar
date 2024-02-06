@@ -322,7 +322,7 @@ session_start();
 						<h1 class="display-3 text-white">Tradition meets Taste!</h1>
 						<p class="fw-normal display-3 text-dark mb-4">at<span class=" fs-1 fw-bold "> गाउँको अचार</span> </p>
 						<p class="mb-4 text-dark">Enhance and transform your meals into a symphony of flavours with our authentic achar where every bite is a journey through time-honoured recipes and genuine ingredients.</p>
-						<a href="#" id="faq" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">Shop Now</a>
+						<a href="shop.php" id="faq" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">Shop Now</a>
 					</div>
 				</div>
 
