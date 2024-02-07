@@ -1,4 +1,4 @@
-<?php require "dbconnect.php"; ?>
+<?php require_once "controllerUserData.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +9,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 offset-md-4 form">
-                <form action="forgot-password.php" method="POST" autocomplete="">
+                <form action="forgot_password.php" method="POST" autocomplete="">
                     <h2 class="text-center">Forgot Password</h2>
                     <p class="text-center">Enter your email address</p>
                     <?php

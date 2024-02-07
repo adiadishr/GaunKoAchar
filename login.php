@@ -1,3 +1,4 @@
+<?php require_once "controllerUserData.php"; ?>
 <?php
     include "dbconnect.php";
     $login = FALSE;
@@ -84,6 +85,16 @@
 
                                     <form action= "login.php" method="POST">
                                         <p class="mb-5">Please login to your account</p>
+                                        <?php
+                                        if(count($errors) > 0){
+                                            ?>
+                                            <?php
+                                            foreach($errors as $showerror){
+                                                echo $showerror;
+                                            }?>
+                                            <?php
+                                            }
+                                            ?>
 
                                         <div class="form-outline mb-4">
                                             <label for="email">Email</label>
