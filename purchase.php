@@ -19,10 +19,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt = mysqli_prepare($conn, $query1);
 
         foreach ($_SESSION['cart'] as $value) {
-            $item_name = $value['Item_name'];
+            $item_name = $value['item_name'];
             $price = $value['price'];
-            $quantity = $value['Quantity'];
-            mysqli_stmt_bind_param($stmt, 'ssiissis', $item_name, $price, $quantity, $oid, $_POST['fname'], $_POST['address'], $_POST['phone_no'], $_POST['pay_mode']);
+            $quantity = $value['quantity'];
+            mysqli_stmt_bind_param($stmt, 'sddiisss', $item_name, $price, $quantity, $oid, $_POST['first_name'], $_POST['address'], $_POST['phone_no'], $_POST['payment_mode']);
             mysqli_stmt_execute($stmt);
             $total += $price * $quantity;
         }
@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "<script>
     alert('Cart is empty.');
-    window.location.href='./mycart.php';
+    window.location.href='./xcart.php';
     </script>";
     }
 }
