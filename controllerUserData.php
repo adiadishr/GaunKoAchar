@@ -1,8 +1,6 @@
 <?php 
 session_start();
 require "dbconnect.php";
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
 $email = "";
 $name = "";
 $errors = array();
@@ -93,8 +91,8 @@ $errors = array();
         }else{
             $code = 0;
             $email = $_SESSION['email']; //getting this email using session
-            $encpass = password_hash($password, PASSWORD_BCRYPT);
-            $update_pass = "UPDATE user SET code = $code, password = '$encpass' WHERE email = '$email'";
+            $hashed_password = password_hash($password, PASSWORD_BCRYPT);
+            $update_pass = "UPDATE user SET code = $code, password = '$hashed_password' WHERE email = '$email'";
             $run_query = mysqli_query($conn, $update_pass);
             if($run_query){
                 $info = "Your password changed. Now you can login with your new password.";

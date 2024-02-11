@@ -1,31 +1,56 @@
-<?php require_once "controllerUserData.php"; ?>
 <?php
-    include "dbconnect.php";
-    $login = FALSE;
+include "dbconnect.php";
 
-    if($_SERVER["REQUEST_METHOD"] == "POST"){
-        $email = $_POST["email"];
-        $password = $_POST["password"];
+$login = FALSE;
+$email_err = $pass_err = '';
+$email = ''; // Initialize email variable to prevent clearing email field on form
 
-        $sql = "SELECT * FROM user WHERE email = '$email' AND password = '$password'";
-        $result = mysqli_query($conn, $sql);
-        $num = mysqli_num_rows($result);
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST["email"];
+    $password = $_POST["password"];
 
-        if ($num == 1 ) {
-            $login = TRUE;
-            session_start();
-            $_SESSION['loggedin'] = TRUE;
-            $_SESSION['email'] = $email;
+    // Client-side validation
+    if (empty($email) || empty($password)) {
+        $email_err = "Email is required";
+        $pass_err = "Password is required";
+    } else {
+        // Server-side validation
+        if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $sql = "SELECT password FROM user WHERE email = ?";
+            $stmt = $conn->prepare($sql);
+            $stmt->bind_param("s", $email);
+            $stmt->execute();
+            $result = $stmt->get_result();
 
-            header("Location: index.php");
-        }
-        else{
-            echo "Invalid Credentials";
+            if ($result->num_rows == 1) {
+                $user = $result->fetch_assoc();
+                $hashed_password = $user['password'];
+
+                // Comparing hashed entered password with the hashed password from the database
+                if (password_verify($password, $hashed_password)) {
+                    $login = TRUE;
+                    session_start();
+                    $_SESSION['loggedin'] = TRUE;
+                    $_SESSION['email'] = $email;
+
+                    header("Location: shop.php");
+                    exit();
+                } else {
+                    $pass_err = "Invalid password";
+                }
+            } elseif ($result->num_rows == 0) {
+                $email_err = "User not found";
+            } else {
+                // Handle unexpected scenario where multiple users are found with the same email
+                $email_err = "Unexpected error occurred. Please try again later.";
+            }
+        } else {
+            $email_err = "Invalid email format";
         }
     }
+}
 
-
- ?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,6 +58,11 @@
 <head>
     <meta charset="utf-8">
     <title>Gaun Ko Achar</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
     <link rel="icon" href="./img/gaunkoachar.png" type="image/x-icon">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
@@ -41,8 +71,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap"
         rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
@@ -60,14 +89,31 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <script>
+        function validateLoginForm() {
+            var email = document.forms["loginForm"]["email"].value;
+            var password = document.forms["loginForm"]["password"].value;
+
+            var isError = false;
+
+            if (email == "") {
+                document.getElementById("email-err").innerText = "Email is required";
+                isError = true;
+            }
+            if (password == "") {
+                document.getElementById("pass-err").innerText = "Password is required";
+                isError = true;
+            }
+
+            return !isError;
+        }
+    </script>
 </head>
 
 <body>
-<?php
-        if ($login) {
-            echo "Logged in Successfully";
-        }
-     ?>
+    <?php if ($login) {
+        echo "Logged in Successfully";
+    } ?>
 
     <section class="h-100 gradient-form bg-gray" style="background-color: #eee;">
         <div class="container py-5 h-100">
@@ -83,44 +129,37 @@
                                         <h4 class="mt-1 mb-5 pb-1">Login</h4>
                                     </div>
 
-                                    <form action= "login.php" method="POST">
+                                    <form id="loginForm" action="login.php" method="POST" onsubmit="return validateLoginForm()">
                                         <p class="mb-5">Please login to your account</p>
-                                        <?php
-                                        if(count($errors) > 0){
-                                            ?>
-                                            <?php
-                                            foreach($errors as $showerror){
-                                                echo $showerror;
-                                            }?>
-                                            <?php
-                                            }
-                                            ?>
 
                                         <div class="form-outline mb-4">
                                             <label for="email">Email</label>
-                                            <input type="email"  name = "email"  id="email" class="form-control mb-2"
-                                                placeholder="Enter your email please" />
+                                            <input type="email" name="email" id="email" class="form-control mb-2"
+                                                placeholder="Enter your email please"
+                                                value="<?php echo isset($_POST['email']) ? $_POST['email'] : ''; ?>" />
+                                            <p class="error" id="email-err"><?php echo $email_err; ?></p>
                                         </div>
-                                    
+
                                         <div class="form-outline mb-4">
                                             <label for="password">Password</label>
-                                            <input type="password"  name = "password" id="password" class="form-control mb-2"
+                                            <input type="password" name="password" id="password" class="form-control mb-2"
                                                 placeholder="Enter your password please" />
+                                            <p class="error" id="pass-err"><?php echo $pass_err; ?></p>
                                         </div>
-                                        
+                                            
                                         <div class="text-center pt-1 mb-1 pb-1">
                                         <p><a href="forgot_password.php">Forgot Password?</a></p>
                                     </div>
 
-                                        <div class="text-center pt-1 mb-1 pb-1">
-                                           <button class="btn btn-primary btn-block fa-lg me-3 mb-3 w-100 " type="login" name = "login" >Login</button>
-                                        </div>
 
+                                        <div class="text-center pt-1 mb-1 pb-1">
+                                            <button id="loginButton" class="btn btn-primary btn-block fa-lg me-3 mb-3 w-100" type="submit" name="login">Login</button>
+                                        </div>
 
                                         <div class="d-flex align-items-center justify-content-center pb-4">
                                             <p class="mb-0 me-2">Don't have an account?</p>
                                             <a href="register.php"><button type="button"
-                                                    class="btn btn-outline-secondary ">Create new</button></a>
+                                                    class="btn btn-outline-secondary">Create new</button></a>
                                         </div>
 
                                     </form>
@@ -137,44 +176,14 @@
         </div>
     </section>
 
-
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" role="status"></div>
-    </div>
-    <!-- Spinner End -->
-
-
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright bg-dark py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <span class="text-light"><a href="index.php"><i class="fas fa-copyright text-light me-2"></i>Gaun Ko
-                            Achar</a>, All right reserved.</span>
-                </div>
-                <div class="col-md-6 my-auto text-center text-md-end text-white">
-                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                    Designed and Maintained By <a class="border-bottom" href="https://project0rbit.com">Antarikshya</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Copyright End -->
-    <!-- JavaScript Libraries -->
+    <!-- Footer and JavaScript libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
-
 </body>
 
 </html>
