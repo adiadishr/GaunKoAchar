@@ -5,7 +5,7 @@ include('./dbconnect.php');
 if (mysqli_connect_error()) {
     echo "<script>
     alert('Cannot connect to the database');
-    window.location.href='./cart.php';  
+    window.location.href='./cart.php';
     </script>";
     exit();
 }
@@ -22,16 +22,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $item_name = $value['item_name'];
             $price = $value['price'];
             $quantity = $value['quantity'];
-
-            // Check if quantity is not null or empty
-            if (!empty($quantity)) {
-                mysqli_stmt_bind_param($stmt, 'sddiisss', $item_name, $price, $quantity, $oid, $_POST['first_name'], $_POST['address'], $_POST['phone_no'], $_POST['payment_mode']);
-                mysqli_stmt_execute($stmt);
-                $total += $price * $quantity;
-            } else {
-                echo "<script>alert('Quantity cannot be null.'); window.location.href='./cart.php';</script>";
-                exit();
-            }
+            mysqli_stmt_bind_param($stmt, 'ssiissis', $item_name, $price, $quantity, $oid, $_POST['first_name'], $_POST['address'], $_POST['phone_no'], $_POST['payment_mode']);
+            mysqli_stmt_execute($stmt);
+            $total += $price * $quantity;
         }
 
         unset($_SESSION['cart']);
@@ -40,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "<script>
     alert('Cart is empty.');
-    window.location.href='./xcart.php';
+    window.location.href='./mycart.php';
     </script>";
     }
 }
